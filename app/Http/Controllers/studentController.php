@@ -40,7 +40,7 @@ class studentController extends Controller
   // }
 
   public function viewStudents($id){
-    $data = Rms_student::join('rms_classes', 'rms_students.class_id', 'rms_classes.id')->find($id);
+    $data = Rms_student::find($id);
     return view('viewstudent',['data'=>$data]);
   }
 

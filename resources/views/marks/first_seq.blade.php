@@ -227,4 +227,13 @@
       </form>
       @endif
       @endforeach
+      <table>
+        <tr class="row col-md-8">
+          <div class="container">
+            <div class="row">
+              <a href="/viewAllResult/{{Session::get('subjectid')}}" class="btn btn-primary"> <h1>View Marks</h1></a>
+            </div>
+          </div>
+        </tr>
+      </table>
       @endsection

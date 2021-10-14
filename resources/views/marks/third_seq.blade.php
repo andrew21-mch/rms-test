@@ -224,4 +224,16 @@
       </form>
       @endif
       @endforeach
+
+      <table>
+        <tr class="row col-md-8">
+          <div class="container">
+            <div class="row">
+              <a href="#" class="btn btn-primary">View Marks</a>
+            </div>
+
+          </div>
+        </tr>
+      </table>
+
       @endsection

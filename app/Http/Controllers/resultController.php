@@ -52,6 +52,7 @@ class resultController extends Controller
       $result->sequence_id = 1;
       $result->subject_id = Session::get('subjectid');
       $result->mark1 = $request->mark;
+      $result->academic_year = (now()->year);
       $result->teacher_id = Session::get('userid');
 
       if($result->save()){
@@ -107,5 +108,16 @@ class resultController extends Controller
 
 
 
+    }
+
+    function viewAllResult($id){
+      $res = DB::table('rms_students')
+      ->join('rms_results','rms_students.id', 'rms_results.student_id')
+      ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
+      ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
+      //->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
+      ->where('rms_subjects.id','=',$id)
+      ->get();
+      return view('/marks.allresult',['res'=>$res]);
     }
 }

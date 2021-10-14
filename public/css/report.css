@@ -5,19 +5,19 @@
   }
 
     #customers td, #customers th {
-      border: 1px solid #ddd;
+      border: 0.5px solid gray;
       padding: 8px;
     }
 
     #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-    #customers tr:hover {background-color: #ddd;}
+    #customers tr:hover {background-color: none;}
 
     #customers th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: blue;
+      background-color: #191970;
       color: white;
     }
     a{

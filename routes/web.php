@@ -41,6 +41,8 @@ Route::view('viewStudent','viewStudent');
 Route::view('/', 'auth.login');
 Route::view('/register', 'auth.register');
 Route::view('/adminRegisterTeacher', 'auth.admin_register');
+Route::view('/allresult', 'marks.allresult');
+
 
 Route::view('/Action/registerStudent', 'registerStudent');
 Route::view('/reportCard','reportCard');
@@ -73,6 +75,7 @@ Route::get('delete/{id}',[studentController::class, 'deleteStudents']);
 Route::get('view/{id}',[studentController::class, 'viewStudents']);
 Route::get('edit',[studentController::class, 'editStudents']);
 Route::get('getResult/{id}',[resultController::class, 'getResult']);
+Route::get('viewAllResult/{id}',[resultController::class, 'viewAllResult']);
 Route::get('rResult/{id}',[reportcardController::class, 'test']);
 Route::get('viewlogs',[logsController::class, 'viewlogs']);
 Route::get('clearlogs',[logsController::class, 'clearlogs']);
