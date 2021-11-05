@@ -12,7 +12,7 @@
         <th class="col-md-2"></th>
         <th class="col-md-3">Student First Name</th>
         <th class="col-md-3">Student Last Name</th>
-        <th class="col-md-1">First Sequence</th>
+        <th class="col-md-1">Sixth Sequence</th>
         <th class="col-md-2">Action</th>
       </tr>
       @foreach ($res as $user)
@@ -44,7 +44,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
       @foreach ($res as $user)
@@ -75,7 +75,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -104,7 +104,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -136,7 +136,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -164,7 +164,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
       @foreach ($res as $user)
@@ -193,7 +193,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Sixth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
