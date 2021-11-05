@@ -112,8 +112,8 @@
         <span class="dashboard">Dashboard</span>
       </div>
       <div class="search-box">
-        <form class="" action="" method="get">
-          <input type="text" placeholder="Search">
+        <form class="" action="/search" method="get">
+          <input type="text" name="search" placeholder="Search">
           <button type="submit"><i class='bx bx-search' ></i></button>
         </form>
 
@@ -199,8 +199,8 @@
           <span class="dashboard">Dashboard</span>
         </div>
         <div class="search-box">
-          <form class="" action="" method="get">
-            <input type="text" placeholder="Search">
+          <form class="" action="/search" method="get">
+            <input type="text" name="search" placeholder="Search">
             <button type="submit"><i class='bx bx-search' ></i></button>
           </form>
 

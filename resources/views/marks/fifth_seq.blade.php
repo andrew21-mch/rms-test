@@ -12,7 +12,7 @@
         <th class="col-md-2"></th>
         <th class="col-md-3">Student First Name</th>
         <th class="col-md-3">Student Last Name</th>
-        <th class="col-md-1">First Sequence</th>
+        <th class="col-md-1">Fifth Sequence</th>
         <th class="col-md-2">Action</th>
       </tr>
       @foreach ($res as $user)
@@ -27,7 +27,7 @@
         <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
         <td class="col"><input class = "form-control" type="text" name="mark" value = "0"></td>
           <td class="col"> <button type="submit" class="btn btn-primary">submit</button>
-          <button type="submit" class="btn btn-warning">Update</button</td>
+          <button type="submit" class="btn btn-success">Update</button</td>
       </tr>
       </form>
       @endif
@@ -44,7 +44,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
       @foreach ($res as $user)
@@ -59,7 +59,7 @@
         <td class="col"><input class = "form-control" type="text" name="mark" value = "">
           <td class="col">
             <button type="submit" class="btn btn-primary">Submit</button>
-             <button type="submit" class="btn btn-warning">Update</button>
+             <button type="submit" class="btn btn-success">Update</button>
         </td>
       </tr>
     </form>
@@ -75,7 +75,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -91,7 +91,7 @@
         <td class="col"><input class = "form-control" type="text" name="mark" value=""></td>
         <td class="col">
           <button type="submit" class="btn btn-primary">Submit</button>
-           <button type="submit" class="btn btn-warning">Update</button>
+           <button type="submit" class="btn btn-success">Update</button>
       </td>
       </tr>
     </form>
@@ -106,7 +106,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -124,7 +124,7 @@
       <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
       <td class="col">
         <button type="submit" class="btn btn-primary">Submit</button>
-         <button type="submit" class="btn btn-warning">Update</button>
+         <button type="submit" class="btn btn-success">Update</button>
     </td>
     </tr>
 
@@ -140,7 +140,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -157,7 +157,7 @@
           <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">Submit</button>
-             <button type="submit" class="btn btn-warning">Update</button>
+             <button type="submit" class="btn btn-success">Update</button>
         </td>
         </tr></form>
       @endif
@@ -170,7 +170,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
       @foreach ($res as $user)
@@ -187,7 +187,7 @@
           <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">Submit</button>
-             <button type="submit" class="btn btn-warning">Update</button>
+             <button type="submit" class="btn btn-success">Update</button>
         </td>
         </tr>
         </form>
@@ -201,7 +201,7 @@
           <th class="col-md-2"></th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
-          <th class="col-md-1">First Sequence</th>
+          <th class="col-md-1">Fifth Sequence</th>
           <th class="col-md-2">Action</th>
         </tr>
 
@@ -218,7 +218,7 @@
           <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">Submit</button>
-             <button type="submit" class="btn btn-warning">Update</button>
+             <button type="submit" class="btn btn-success">Update</button>
         </td>
         </tr>
       </form>
@@ -228,7 +228,7 @@
         <tr class="row col-md-8">
           <div class="container">
             <div class="row">
-              <a href="#" class="btn btn-warning">View Marks</a>
+              <a href="#" class="btn btn-success">View Marks</a>
             </div>
 
           </div>

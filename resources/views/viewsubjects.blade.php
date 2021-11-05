@@ -19,7 +19,7 @@
       <th scope="row">{{$subject->id}}</th>
       <td>{{$subject->name}}</td>
       <td>{{$subject->teacher_first_name}} {{$subject->teacher_last_name}}</td>
-      <td>{{$subject->teacher_phone}}</td>
+      <td><a href="https://wa.me/237{{$subject->teacher_phone}}">{{$subject->teacher_phone}}</a></td>
       <td>{{$subject->coefficient}}</td>
     </tr>
     @endforeach

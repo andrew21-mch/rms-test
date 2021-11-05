@@ -1,6 +1,5 @@
 @extends('layouts.layout')
-@section('content')<br><br><br><br>
-<h1>>>Analytics</h1>
+@section('content')<br><br><br><br><br>
 
 <style media="screen">
   i{
@@ -277,7 +276,7 @@ var Classes = new Chart(ccc, {
   </tr>
   <tr>
     <td> {{$count1-$count1g}}</td>
-    <td> {{$count2g}}</td>
+    <td> {{$count1g}}</td>
     <td> {{$count2-$count2g}}</td>
     <td> {{$count2g}}</td>
     <td> {{$count3-$count3g}}</td>

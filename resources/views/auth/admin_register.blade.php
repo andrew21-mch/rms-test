@@ -2,7 +2,7 @@
 @section('content')
 <div class="container" style="padding:120px">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
         <div class="card-header"><center><h1>Register Teacher</h1></center></div>
 
@@ -10,7 +10,7 @@
           <form action="/create_account" method="post">
             @csrf
                 <div class="form-group row justify-content-center">
-                      <div class="col-md-5">
+                      <div class="col-md-6">
                         <label for="name" >First Name</label>
                           <input id="fname" type="text" class="form-control @error('name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="name" autofocus>
 
@@ -20,7 +20,7 @@
                               </span>
                           @enderror
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-md-6">
                         <label for="lname" >Last Name</label>
                           <input id="lname" type="text" class="form-control @error('lname') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="lname">
 
@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group row justify-content-center">
 
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                       <label for="email">Email</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -50,7 +50,7 @@
 
                 @if(Session::get('user1')==200)
                 <div class="form-group row justify-content-center">
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                       <label for="phone" >{{ __('Phone Number') }}</label>
                         <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
 
@@ -60,7 +60,7 @@
                             </span>
                         @enderror
                     </div>
-                  <div class="col-md-5">
+                  <div class="col-md-6">
                     <label for="role" >{{ __('Role') }}</label>
                       <select class="form-control" name="">
                         <option value="">Select Role</option>
@@ -78,7 +78,7 @@
 
                 @else
                 <div class="form-group row justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                       <label for="phone" >{{ __('Phone Number') }}</label>
                         <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
 
@@ -91,7 +91,7 @@
                 </div>
                 @endif
                 <div class="form-group row justify-content-center">
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                       <label for="subject" >{{ __('Subject') }}</label>
                       <select class="form-control" name="subject">
                         <option value="">Select Subject</option>
@@ -105,7 +105,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                       <label for="password-confirm" >{{ __('Option') }}</label>
                       <select class="form-control" name="option">
                         <option value="">Select Option</option>
@@ -124,7 +124,7 @@
 
 
                 <div class="form-group row justify-content-center">
-                    <div class="col-md-5 mt-2">
+                    <div class="col-md-6 mt-1">
                       <label for="password" >{{ __('Password') }}</label>
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
@@ -134,7 +134,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-5 mt-2">
+                    <div class="col-md-6 mt-1">
                       <label for="password-confirm" >{{ __('Confirm Password') }}</label>
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                     </div>

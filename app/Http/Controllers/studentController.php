@@ -92,4 +92,14 @@ class studentController extends Controller
       return view('registerStudent');
         }
   }
+
+  function search(Request $request){
+    $searched_item = Rms_student::where('first_name', 'like', '%'.$request->input('search').'%')
+    ->orWhere('last_name', 'like', '%'.$request->input('search').'%')
+    ->orWhere('gender', 'like', '%'.$request->input('search').'%')
+    ->orWhere('class_id', 'like', '%'.$request->input('search').'%')
+
+    ->get();
+    return view('search_page',['searched_result'=>$searched_item]);
+  }
 }

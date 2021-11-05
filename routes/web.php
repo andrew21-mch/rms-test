@@ -42,6 +42,7 @@ Route::view('/', 'auth.login');
 Route::view('/register', 'auth.register');
 Route::view('/adminRegisterTeacher', 'auth.admin_register');
 Route::view('/allresult', 'marks.allresult');
+Route::view('/search_tips', 'search_tips');
 
 
 Route::view('/Action/registerStudent', 'registerStudent');
@@ -79,6 +80,7 @@ Route::get('viewAllResult/{id}',[resultController::class, 'viewAllResult']);
 Route::get('rResult/{id}',[reportcardController::class, 'test']);
 Route::get('viewlogs',[logsController::class, 'viewlogs']);
 Route::get('clearlogs',[logsController::class, 'clearlogs']);
+Route::get('search',[studentController::class, 'search']);
 
 
 //Auth::routes();
@@ -96,3 +98,8 @@ Route::post('insert_sequence5', [resultController::class, 'insertFifthSequence']
 Route::post('insert_sequence6', [resultController::class, 'insertSixthSequence']);
 Route::post('/update/{id}', [teacherController::class, 'profileupdate']);
 Route::post('/report1',[subjectController::class, 'updatesubject']);
+
+
+
+#aside test route;
+Route::get('averages', [resultController::class, 'testaverages']);

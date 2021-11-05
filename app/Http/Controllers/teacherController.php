@@ -11,8 +11,8 @@ use Session;
 class teacherController extends Controller
 {
     function subject($id){
-      return Rms_subject::($id)
-      ->join('rms_teachers', 'rms_subjects.teacher_id', 'rms_teachers.id');
+      return Rms_subject::join('rms_teachers', 'rms_subjects.teacher_id', 'rms_teachers.id')
+      ->find($id);;
     }
 
     function createAccount(Request $request){
@@ -46,8 +46,8 @@ class teacherController extends Controller
       else{
         return '<script type="text/javascript">alert("Passwords Do not match!");</script>';
       }
-    }
-    // function countTeachers(){
+    // function countTeachers()
+    {
     //   $teachernum = Rms_teacher::count();
     //
     // }
@@ -74,5 +74,6 @@ class teacherController extends Controller
                }
           }
         }
-
-}
+      }
+    }
+  }

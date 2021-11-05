@@ -25,7 +25,7 @@
           <input type="date" class="form-control" id="dob" name="date_of_birth" >
           <span class="text-danger">@error ('date_of_birth') {{$message}} @enderror</span>
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
           <label for="pob">Place Of Birth</label>
           <input type="text" class="form-control" id="pob" name="place_of_birth">
           <span class="text-danger">@error ('place_of_birth') {{$message}} @enderror</span>

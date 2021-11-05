@@ -23,7 +23,7 @@
           <div class="row col-md-10">
             <table class="table">
               <tr>
-                <td>  <div class="col-sm-5">
+                <td colspan="5">
                     <center>REPUBLIC DU CAMEROUN <br>
                     Paix-Travail-Partrie <br>
                     MINISTRE TO ENSEIGMENT SECONDAIRE <br>
@@ -32,21 +32,21 @@
                     EDUCATIONAL COMPLEX</center>
                   </div></td>
 
-                  <td>
-                    <div class="col-sm-2">
+                  <td colspan="2">
+
                       <span class="iconify" data-icon="icons8:student" data-width="100" data-height="100"></span>
-                  </div>
+
                 </td>
 
-                <td>
-                  <div class="col-sm-5">
+                <td colspan="5">
+
                     <center>REPUBLIC DU CAMEROUN <br>
                     Paix-Travail-Partrie <br>
                     MINISTRE TO ENSEIGMENT SECONDAIRE <br>
                     DELEGATION REGIONAL DU NORHT WEST  <br>
                     SAINT FRANCISCA MULTILINGUAL <br>
                     EDUCATIONAL COMPLEX</center>
-                  </div></td>
+                  </td>
 
               </div>
               </tr>
@@ -95,8 +95,11 @@
           </tr>
         </thead>
         <tbody>
+            <?php $coef = 0 ?>
+            <?php $tmarks = 0?>
         @foreach($data1 as $data)
           <tr>
+            <?php $coef = $data->coefficient+$coef ?>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
             <td>{{$data->mark1}}</td>
@@ -110,6 +113,7 @@
             <td>Failed</td>
             @endif
 
+            <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient ?>
           </tr>
         @endforeach
       </table></center>
@@ -120,21 +124,30 @@
           <tr>
             <td colspan="2"> Student Average </td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:110px; margin:1px 2px 1px 4px;"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{$tmarks/$coef}}"></td>
           </tr>
 
           <tr>
             <td colspan="2"> Class Average </td>
-            <td><input type="text" class="form-control" style="height:22px; width:110px; margin:1px 2px 1px 4px;"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" ></td>
           </tr>
           <tr>
             <td colspan="2">Position</td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:110px; margin:1px 2px 1px 4px;"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;"></td>
           </tr>
           <tr>
             <td colspan="2">Observation</td>
-            <td><input type="text" class="form-control" style="height:22px; width:110px; margin:1px 2px 1px 4px;"></td>
+            @if($tmarks/$coef > 18 )
+            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Excellent"></td>
+            @elseif($tmarks/$coef > 16 && $tmarks/$coef< 18)
+            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Very Good"></td>
+            @elseif($tmarks/$coef < 16 && $tmarks/$coef > 9.99)
+            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Good"></td>
+            @else
+            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Failed"></td>
+          @endif
+
           </tr>
           </table>
       </td>
@@ -148,7 +161,8 @@
           </tr>
           <tr>
             <td colspan="2">COULD DO BETTER</td>
-            <td><input type="checkbox" style="margin: 1px 1px 1px 1px";></td>
+            <td>
+              <input type="checkbox" style="margin: 1px 1px 1px 1px" ></td>
           </tr>
           <tr>
             <td colspan="2">ACADEMIC WARNING</td>
@@ -156,7 +170,7 @@
           </tr>
           <tr>
             <td colspan="2">DISCIPLINE WARNIN</td>
-            <td><input type="checkbox" style="margin: 1px 1px 1px 1px";></td>
+            <td><input type="checkbox" style="margin: 1px 1px 1px 1px"; ></td>
           </tr>
           </table> </td>
       </table>

@@ -119,5 +119,26 @@ class resultController extends Controller
       ->where('rms_subjects.id','=',$id)
       ->get();
       return view('/marks.allresult',['res'=>$res]);
-    }
-}
+    }}
+
+    // function testaverages(){
+    //   $marks = Rms_result::select('student_id', 'mark1','mark2','name')
+    //   ->join('rms_subjects','rms_subjects.id', 'rms_results.subject_id')->orderBy('student_id')->get();
+    //
+    //   $ma = 0;
+    //   $mark1 = 0;
+    //   $mark2 = 0;
+    //   $coef = 0;
+    //   foreach($marks as $mark){
+    //     $ma = $ma + $mark['student_id'];
+    //
+    //     $mark1 = $mark1 + $mark['mark1'];
+    //     $mark2 = $mark2 + $mark['mark2'];
+    //
+    //     echo $mark['student_id']." ".$mark['name']."<hr>";
+    //
+    //
+    // }
+    // echo "Mark1 Total"." ________"."Mark2 Total"."<br>";
+    // echo $mark1 ."___________________". $mark2;
+    //
