@@ -63,10 +63,16 @@ class resultController extends Controller
     }
 
     function insertSecondSequence(Request $request){
-
-      Rms_result::where('student_id', $request->id)
+      if(
+        Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark2' => $request->mark]);
+      ->update(['mark2' => $request->mark])
+      ){
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      }
+      else{
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+      }
 
       //$result->save();
 
@@ -75,37 +81,62 @@ class resultController extends Controller
 
     function insertThirdSequence(Request $request){
 
-      Rms_result::where('student_id', $request->id)
+      if(
+        Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark3' => $request->mark]);
-
+      ->update(['mark3' => $request->mark])
+      ){
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      }
+      else{
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+      }
 
 
     }
 
     function insertFourthSequence(Request $request){
-
-      Rms_result::where('student_id', $request->id)
+      if(
+        Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark4' => $request->mark]);
+      ->update(['mark4' => $request->mark])
+      ){
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      }
+      else{
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+      }
 
 
     }
 
     function insertFifthSequence(Request $request){
 
-      Rms_result::where('student_id', $request->id)
+      if(
+        Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark5' => $request->mark]);
+      ->update(['mark5' => $request->mark])
+      ){
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      }
+      else{
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+      }
 
     }
 
     function insertSixthSequence(Request $request){
 
-      Rms_result::where('student_id', $request->id)
+      if(
+        Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark6' => $request->mark]);
-
+      ->update(['mark6' => $request->mark])
+      ){
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      }
+      else{
+        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+      }
 
 
     }
