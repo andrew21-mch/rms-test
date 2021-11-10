@@ -33,6 +33,9 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
+.overview-boxes{
+  margin: 4%;
+}
 
 body, html {
 	height: 100%;

@@ -14,8 +14,10 @@ class logsController extends Controller
       return view('viewlogs',['logs'=>$logs]);
     }
     function clearlogs(){
+      $logs = DB::table('rms_logs')
+      ->join('rms_teachers', 'rms_logs.teacher_id', 'rms_teachers.id')->get();
       if(Rms_log::truncate()){
-        return view('viewlogs');
+        return view('viewlogs',['logs'=>$logs]);
       };
     }
     public function search(Request $request){

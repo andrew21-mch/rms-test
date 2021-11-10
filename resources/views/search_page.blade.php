@@ -3,7 +3,7 @@
 
 <div class="container" style="padding-top:80px">
   @if(count($searched_result))
-  <table class="table table-bordered" border="2px">
+  <table class="table table" border="2px">
     <thead>
       <tr style="background-color:#DCDCDC">
         <th scope="col" class="col-md-2">student_first_name</th>
@@ -15,7 +15,7 @@
     </thead>
     <tbody>
   @foreach($searched_result as $searched_item)
-  <tr style="background-color:#DCDCDC">
+  <tr style="background-color:#DCDCDC; border-style:groove">
     <td scope="col" class="col-md-2">{{$searched_item['first_name']}}</td>
     <td scope="col" class="col-md-1">{{$searched_item['last_name']}}</td>
     <td scope="col" class="col-md-1">{{$searched_item['date_of_birth']}}</td>

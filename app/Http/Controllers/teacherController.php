@@ -46,15 +46,13 @@ class teacherController extends Controller
       else{
         return '<script type="text/javascript">alert("Passwords Do not match!");</script>';
       }
-    // function countTeachers()
-    {
-    //   $teachernum = Rms_teacher::count();
-    //
-    // }
-    function profileview($id){
+    }
+
+    function view_profile($id){
       $teacher = Rms_teacher::join('rms_subjects','rms_teachers.subject_id', 'rms_subjects.id')->find($id);
       return view('viewteacher',['teacher'=>$teacher]);
     }
+
     function profileupdate(Request $request){
        if($teacher = Rms_teacher::where('id', session::get('userid'))
         ->update([
@@ -75,5 +73,5 @@ class teacherController extends Controller
           }
         }
       }
-    }
-  }
+    
+

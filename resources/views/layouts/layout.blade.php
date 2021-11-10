@@ -123,7 +123,7 @@
          <button class="dropbtn">Hello {{Session::get('user')}}</button>
          <div class="dropdown-content">
            <a href="/userlogout">Logout</a>
-           <a href="/profile_view/{{Session::get('userid')}}">Update</a>
+           <a href="/view_profile/{{Session::get('userid')}}">Update</a>
          </div>
        </div>
     @endif

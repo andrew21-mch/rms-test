@@ -21,13 +21,13 @@ class LoginController extends Controller
         //get the data from the teachers table)
         $data = Rms_teacher::where(['email'=>$request->email, 'password'=>$request->password])->first();
         $log = new Rms_log;
-        $log->teacher_id = $data['id'];
         if(!$data){
-          return view('login');
+          return view('auth.login');
         }
           elseif($data && $data['role']==100){
             $request->session()->put('user',$data['teacher_last_name']);
             $request->session()->put('userid',$data['id']);
+            $log->teacher_id = $data['id'];
             $log->save();
             $request->session()->put('subjectid',$data['subject_id']);
             $request->session()->put('user1',$data['role']);
@@ -36,6 +36,7 @@ class LoginController extends Controller
           else{
             $request->session()->put('user',$data['teacher_last_name']);
             $request->session()->put('userid',$data['id']);
+            $log->teacher_id = $data['id'];
             $log->save();
             $request->session()->put('user1',$data['role']);
             $request->session()->put('subjectid',$data['subject_id']);

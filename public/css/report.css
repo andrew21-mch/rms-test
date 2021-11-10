@@ -72,6 +72,12 @@ a.box{
   text-decoration: none;
   color:black;
 }
+a#box{
+  text-decoration: none;
+  color:hsl(0, 0%, 0%);
+  background-color:white;
+  margin: 1%;
+}
 .col{
   border-style: none;
   background-color: inherit;
@@ -80,4 +86,12 @@ tr{
   line-height: 14px;
    min-height: 14px;
    height: 14px;
+}
+.overview-boxes{
+  background-color: blue;
+  color: black;
+}
+a#box:hover{
+  background-color: blue;
+  color: white;
 }

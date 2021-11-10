@@ -20,17 +20,17 @@
       </div>
 
       <div class="row justify-content-center mt-2">
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-3 mt-2" >
           <label for="dob">Date Of Birth</label>
           <input type="date" class="form-control" id="dob" name="date_of_birth" >
           <span class="text-danger">@error ('date_of_birth') {{$message}} @enderror</span>
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-3 mt-2">
           <label for="pob">Place Of Birth</label>
           <input type="text" class="form-control" id="pob" name="place_of_birth">
           <span class="text-danger">@error ('place_of_birth') {{$message}} @enderror</span>
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-4 mt-2">
           <label for="student_region">Region</label>
           <select class="form-control" id="student_region" name="student_region">
             <option value="" >Chose Region</option>
