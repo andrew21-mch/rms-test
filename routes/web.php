@@ -62,7 +62,7 @@ Route::get('/insertmarks/sixths6', [resultController::class, 'getSixthres']);
 
 Route::get('student',[studentController::class, 'getstudent']);
 Route::get('teacherviewsubject/{id}', [teacherController::class, 'subject']);
-Route::get('/profile_view/{id}', [teacherController::class, 'profileview']);
+Route::get('/profile_view/{id}', [teacherController::class, 'view_profile']);
 Route::get('userlogout',[LoginController::class, 'logout']);
 Route::get('count',[studentController::class, 'countTeachers']);
 Route::get('view/classes',[studentController::class, 'getclass']);
