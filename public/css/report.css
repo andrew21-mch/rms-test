@@ -74,9 +74,13 @@ a.box{
 }
 a#box{
   text-decoration: none;
-  color:hsl(0, 0%, 0%);
+  color:rgb(0, 0, 0);
   background-color:white;
-  margin: 1%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 0.5%;
+
 }
 .col{
   border-style: none;
@@ -94,4 +98,7 @@ tr{
 a#box:hover{
   background-color: blue;
   color: white;
+}
+.home-content{
+  margin-bottom: 15px;
 }

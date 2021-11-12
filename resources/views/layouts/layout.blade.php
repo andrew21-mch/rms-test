@@ -92,7 +92,7 @@
           </a>
         </li>
         <li>
-          <a href="viewlogs">
+          <a href="/viewlogs">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">View Logs</span>
           </a>
@@ -123,7 +123,7 @@
          <button class="dropbtn">Hello {{Session::get('user')}}</button>
          <div class="dropdown-content">
            <a href="/userlogout">Logout</a>
-           <a href="/view_profile/{{Session::get('userid')}}">Update</a>
+           <a href="/profile_view/{{Session::get('userid')}}">Update</a>
          </div>
        </div>
     @endif

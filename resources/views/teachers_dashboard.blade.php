@@ -15,9 +15,6 @@
       </a>
       @endif
     @endforeach
-</div>
-<div class="container">
-  <div class="home-content">
       <div class="overview-boxes" id="overview-boxes" style="margin: 4%;">
           <a href="/insertmarks/first1" class="box" id="box" style="height: 120px; width:100%; text-decoration: none">
             Sequence 1
@@ -48,5 +45,6 @@
             Sequence 6
           </a>
       </div>
+  </div>
   </div>
 @endsection
