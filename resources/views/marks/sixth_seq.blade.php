@@ -17,7 +17,7 @@
       </tr>
       @foreach ($res as $user)
       @if($user->class_id == 1)
-      <form class="form-group" action="/insert_sequenc6"  method="post">
+      <form class="form-group" action="/insert_sequence6"  method="post">
       @csrf
       <input class = "form-control" type="hidden" name="subject_id" value="{{Session::get('subjectid')}}">
       <tr>

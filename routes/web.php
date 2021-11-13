@@ -91,6 +91,7 @@ Route::post('userlogin',[LoginController::class, 'login']);
 Route::post('/registStudent', [studentController::class, 'registStudent']);
 Route::post('/create_account', [teacherController::class, 'createAccount']);
 Route::post('insert_sequence1', [resultController::class, 'insertFirstSequence']);
+Route::get('/update_sequence1/{id}', [resultController::class, 'updateFirstSequence']);
 Route::post('insert_sequence2', [resultController::class, 'insertSecondSequence']);
 Route::post('insert_sequence3', [resultController::class, 'insertThirdSequence']);
 Route::post('insert_sequence4', [resultController::class, 'insertFourthSequence']);

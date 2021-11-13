@@ -27,9 +27,7 @@
         <td class="col"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
         <td class="col"><input class = "form-control col" type="text" name="mark" value = "0"></td>
           <td class="col">
-            <button type="submit" class="btn btn-primary">submit</button>
-            <button type="submit" class="btn btn-success">Update</button>
-          </td>
+            <button type="submit" class="btn btn-primary">submit</button>          </td>
       </tr>
       </form>
       @endif
@@ -61,7 +59,6 @@
         <td class="col"><input class = "form-control col" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">submit</button>
-            <button type="submit" class="btn btn-success">Update</button>
           </td>
       </tr>
     </form>
@@ -93,7 +90,6 @@
         <td class="col"><input class = "form-control col" type="text" name="mark" value=""></td>
         <td class="col">
           <button type="submit" class="btn btn-primary">submit</button>
-          <button type="submit" class="btn btn-success">Update</button>
         </td>
       </tr>
     </form>
@@ -126,7 +122,6 @@
       <td class="col"><input class = "form-control col" type="text" name="mark" value = ""></td>
       <td class="col">
         <button type="submit" class="btn btn-primary">submit</button>
-        <button type="submit" class="btn btn-success">Update</button>
       </td>
     </tr>
 
@@ -159,7 +154,6 @@
           <td class="col"><input class = "form-control col" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">submit</button>
-            <button type="submit" class="btn btn-success">Update</button>
           </td>
         </tr></form>
       @endif
@@ -189,7 +183,6 @@
           <td class="col"><input class = "form-control col" type="text" name="mark" value = ""></td>
           <td class="col">
             <button type="submit" class="btn btn-primary">submit</button>
-            <button type="submit" class="btn btn-success">Update</button>
           </td>
         </tr>
         </form>
@@ -219,8 +212,7 @@
           <td class="col"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
           <td class="col"><input class = "form-control col" type="text" name="mark" value = ""></td>
           <td class="col">
-            <button type="submit" class="btn btn-primary">submit</button>
-            <button type="submit" class="btn btn-warning">Update</button>
+            <button type="submit" class="btn btn-primary" style="text-align: center">submit</button>
           </td>
         </tr>
       </form>
