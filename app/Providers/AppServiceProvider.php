@@ -28,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+      if(env(key: 'APP_KEY' !== 'local')){
+        URL::forceScheme(scheme: 'https');
+      }
         view::share('class',DB::table('rms_classes')->get());
         view::share('data', DB::table('rms_students')->get());
         view::share('count',DB::table('rms_students')->count());
