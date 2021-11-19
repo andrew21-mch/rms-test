@@ -14,6 +14,8 @@
       }
       .container{
         margin-top: 3%;
+      }
+      .for-group{
         width: 80%;
         height: 50%;
       }
