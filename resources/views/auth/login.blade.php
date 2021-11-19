@@ -18,6 +18,9 @@
         height: 50%;
       }
       .col-md-8{
+        width: 95%;
+      }
+      .card{
         width: 90%;
       }
     </style>
