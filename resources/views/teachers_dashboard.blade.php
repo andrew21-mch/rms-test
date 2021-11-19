@@ -27,7 +27,7 @@
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/thirds3" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            Sequence 2
+            Sequence 3
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
