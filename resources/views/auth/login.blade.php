@@ -14,8 +14,8 @@
       }
       .container{
         margin-top: 3%;
-        width: 60%;
-        height: 70%;
+        width: 80%;
+        height: 50%;
       }
       .col-md-8{
         width: 90%;
@@ -39,7 +39,7 @@
 
 <div class="container" style="padding:120px">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
