@@ -13,10 +13,33 @@
       <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
       <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
 
+      <link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/dataTables.bootstrap.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap-social.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap-select.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/fileinput.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/awesome-bootstrap-checkbox.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/style.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/font-awesome.min.css')}}">
+
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <script language="javascript" type="text/javascript">
+          var popUpWin=0;
+          function popUpWindow(URLStr, left, top, width, height)
+          {
+           if(popUpWin)
+          {
+          if(!popUpWin.closed) popUpWin.close();
+          }
+          popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=yes,width='+510+',height='+430+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');
+          }
+
+        </script>
      </head>
-  <body><br><br>
-    <div class="container" style="font-size:10px">
+  <body id="print" class="body">
+    <div class="container" style="font-size:10px" >
       @if(count($data1))
       <div class="container" style="font-size:12px">
         <center>
@@ -50,11 +73,13 @@
 
               </div>
               </tr>
+              <tr>
+                <td colspan="12" rowspan="2"><center><h2 class="col-md-10 mt-4" style="font-size:12px">PROGRESS REPORT CARD / BULLETIN DE NOTES</h2></center></div></td>
+              </tr>
 
             </table>
 
       </center>
-        <center><h2 class="col-md-10 mt-4" style="font-size:12px">PROGRESS REPORT CARD / BULLETIN DE NOTES</h2></center></div>
       <br>
 
       <div class="container col-md-12" style="outline:solid #ddd">
@@ -198,10 +223,8 @@
     </table>
   </div>
 </div>
-      <a href="" @click.prevent="printme" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
-
-        <script src="{{ mix('js/app.js') }}"></script>
-      @else
+      <span style="float:left" ><i class="fa fa-print fa-2x" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
+        @else
       <div class="row justify-content-center col-md-12">
         <div class="alert alert-primary mt-4" role="alert" style="text-align:center">
           <h1>No Results Available Yet!</h1>
@@ -210,5 +233,33 @@
       </div>
       @endif
     </div>
-  </body>
+
+  <!-- Loading Scripts -->
+
+	<!-- Loading Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/fileinput.js"></script>
+	<script src="js/chartData.js"></script>
+	<script src="js/main.js"></script>
+ <script>
+$(function () {
+$("[data-toggle=tooltip]").tooltip();
+    });
+function CallPrint(strid) {
+var prtContent = document.getElementById("print");
+var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+WinPrint.document.head.append(document.head)
+WinPrint.document.write(prtContent.outerHTML);
+WinPrint.document.close();
+WinPrint.focus();
+WinPrint.print();
+WinPrint.close();
+}
+</script>
+      </body>
 </html>

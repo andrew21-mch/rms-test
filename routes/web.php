@@ -32,6 +32,8 @@ Route::view('/form4', 'class.form4');
 Route::view('/form5', 'class.form5');
 Route::view('/lowersixth', 'class.lowersixth');
 Route::view('/uppersixth', 'class.uppersixth');
+Route::view('/test', 'test');
+
 
 
 Route::view('/admin', 'admin_dashboard');
@@ -81,6 +83,7 @@ Route::get('rResult/{id}',[reportcardController::class, 'test']);
 Route::get('viewlogs',[logsController::class, 'viewlogs']);
 Route::get('clearlogs',[logsController::class, 'clearlogs']);
 Route::get('search',[studentController::class, 'search']);
+
 
 
 //Auth::routes();
