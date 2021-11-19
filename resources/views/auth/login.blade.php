@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+
+    <style media="screen">
+      body{
+        height: 100%
+      }
+    </style>
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
         <nav class="nav justify-content-end  navbar-light bg-light">
