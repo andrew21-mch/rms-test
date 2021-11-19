@@ -38,7 +38,7 @@
 
       <table id="customers">
         <tr>
-          <th style="background:black; color: white">Form 2</th>
+          <th class="col-md-1" style="background:black; color: white">Form 2</th>
         </tr>
         <tr>
           <th class="col-md-2"></th>
