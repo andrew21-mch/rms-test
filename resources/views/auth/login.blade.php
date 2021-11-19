@@ -19,6 +19,9 @@
         width: 80%;
         height: 50%;
       }
+      .col-md-10{
+        width: 90%;
+      }
     </style>
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
@@ -48,7 +51,7 @@
 
                         <div class="form-group row justify-content-center">
 
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                               <label for="email">Email</label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -61,7 +64,7 @@
                         </div>
 
                         <div class="form-group row justify-content-center">
-                            <div class="col-md-8"><br>
+                            <div class="col-md-10"><br>
                               <label for="password">Password</label>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
