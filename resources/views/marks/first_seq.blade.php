@@ -6,7 +6,7 @@
     <br><br><br><br>
     <table id="customers">
       <tr>
-        <th style="background:black; color: white">Form 1</th>
+        <th class="col-md-2" style="background:black; color: white">Form 1</th>
       </tr>
       <tr>
         <th class="col-md-2"></th>
