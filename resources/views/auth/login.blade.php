@@ -9,7 +9,11 @@
 
     <style media="screen">
       body{
-        height: 100%
+        height: 100%;
+      }
+      .container{
+        width: 60%;
+        height: 70%;
       }
     </style>
   </head>
