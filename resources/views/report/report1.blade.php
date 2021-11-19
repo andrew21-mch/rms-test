@@ -3,25 +3,25 @@
     <head>
       <meta charset="UTF-8">
       <!--<title> Responsiive Admin Dashboard |!-->
-      <link rel="stylesheet" href="{{URL::secure_asset('css/admin.css')}}">
+      <link rel="stylesheet" href="{{URL::asset('css/admin.css')}}">
       <!-- Boxicons CDN Link -->
       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
       <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-      <link rel="stylesheet" href="{{URL::secure_asset('css/report.css')}}">
-      <link rel="stylesheet" href="{{URL::secure_asset('css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
+      <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
 
-      <link rel="stylesheet" href="{{URL::secure_asset('css/font-awesome.min.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/bootstrap.min.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/dataTables.bootstrap.min.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/bootstrap-social.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/bootstrap-select.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/fileinput.min.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/awesome-bootstrap-checkbox.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/style.css')}}">
-    	<link rel="stylesheet" href="{{URL::secure_asset('test/css/font-awesome.min.css')}}">
+      <link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/dataTables.bootstrap.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap-social.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/bootstrap-select.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/fileinput.min.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/awesome-bootstrap-checkbox.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/style.css')}}">
+    	<link rel="stylesheet" href="{{URL::asset('test/css/font-awesome.min.css')}}">
 
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
