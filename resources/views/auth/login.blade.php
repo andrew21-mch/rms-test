@@ -15,7 +15,7 @@
       .container{
         margin-top: 3%;
       }
-      .for-group{
+      .form-group{
         width: 80%;
         height: 50%;
       }
