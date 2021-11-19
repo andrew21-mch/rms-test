@@ -5,6 +5,27 @@
     <title></title>
     <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+    <style media="screen">
+    body{
+      height: 100%;
+      }
+      .container{
+        margin-top: 3%;
+      }
+      .form-group{
+        width: 100%;
+        height: 30%;
+      }
+      .col-md-10{
+      width: 100%;
+      }
+      .card-body{
+        width: 100%;
+        height: 60%; }
+      .row{
+        width: 98%;
+      }
+    </style>
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
         <nav class="nav justify-content-end  navbar-light bg-light">
@@ -20,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <div class="container" style="padding:120px">
+        <div class="container" style="padding:60px">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
