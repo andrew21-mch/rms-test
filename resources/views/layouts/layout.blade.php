@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard |!-->
-    <link rel="stylesheet" href="{{URL::secure_asset('css/admin.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/admin.css')}}">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-    <link rel="stylesheet" href="{{URL::secure_asset('css/report.css')}}">
-    <link rel="stylesheet" href="{{URL::sercure_asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
