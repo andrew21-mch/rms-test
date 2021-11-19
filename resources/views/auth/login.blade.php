@@ -17,7 +17,7 @@
         width: 60%;
         height: 70%;
       }
-      card-body{
+      .col-md-8{
         width: 90%;
       }
     </style>
