@@ -10,8 +10,8 @@
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-      <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
-      <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{URL::secure_asset('css/report.css')}}">
+      <link rel="stylesheet" href="{{URL::secure_asset('css/bootstrap.min.css')}}">
 
       <link rel="stylesheet" href="{{URL::secure_asset('css/font-awesome.min.css')}}">
     	<link rel="stylesheet" href="{{URL::secure_asset('test/css/bootstrap.min.css')}}">
