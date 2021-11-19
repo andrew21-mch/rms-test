@@ -6,10 +6,10 @@
     <br><br><br><br>
     <table id="customers">
       <tr>
-        <th style="background:black; color: white; width:10%">Form 1</th>
+        <th style="background:black; color: white">Form 1</th>
       </tr>
       <tr>
-        <th class="col-md-2"></th>
+        <th class="col-md-2">#</th>
         <th class="col-md-3">Student First Name</th>
         <th class="col-md-3">Student Last Name</th>
         <th class="col-md-1">First Sequence</th>
@@ -38,10 +38,10 @@
 
       <table id="customers">
         <tr>
-          <th class="col-md-1" style="background:black; color: white">Form 2</th>
+          <th style="background:black; color: white">Form 2</th>
         </tr>
         <tr>
-          <th class="col-md-2"></th>
+          <th class="col-md-2">#</th>
           <th class="col-md-3">Student First Name</th>
           <th class="col-md-3">Student Last Name</th>
           <th class="col-md-1">First Sequence</th>
