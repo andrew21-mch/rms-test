@@ -9,18 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style media="screen">
-      body{
-        height: 100%;
+    body{
+      height: 100%;
       }
       .container{
         margin-top: 3%;
       }
       .form-group{
-        width: 80%;
-        height: 50%;
+        width: 100%;
+        height: 30%;
       }
       .col-md-10{
-        width: 90%;
+      width: 100%;
+      }
+      .card-body{
+        width: 100%;
+        height: 60%; }
+      .row{
+        width: 98%;
       }
     </style>
   </head>
