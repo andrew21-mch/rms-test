@@ -9,8 +9,8 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-    <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::secure_asset('css/report.css')}}">
+    <link rel="stylesheet" href="{{URL::secure_asset('css/bootstrap.min.css')}}">
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>

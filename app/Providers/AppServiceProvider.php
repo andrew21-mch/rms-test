@@ -64,10 +64,6 @@ class AppServiceProvider extends ServiceProvider
         view::share('count7g',Rms_student::where('gender','Female')->where('class_id', 7)->count());
 
 
-        iif($this->app->environment('production')) {
-          \URL::forceScheme('https');
-        }
-
 
     }
 }
