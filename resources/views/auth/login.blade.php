@@ -20,7 +20,7 @@
       .col-md-10{
         width: 95%;
       }
-      .card{
+      .card-body{
         width: 90%;
       }
     </style>
