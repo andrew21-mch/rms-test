@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="{{URL::secure_asset('css/report.css')}}">
-    <link rel="stylesheet" href="{{URL::secure_asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
         <nav class="nav justify-content-end  navbar-light bg-light">
