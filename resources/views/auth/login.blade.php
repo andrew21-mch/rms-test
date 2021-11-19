@@ -17,12 +17,6 @@
         width: 80%;
         height: 50%;
       }
-      .col-md-10{
-        width: 95%;
-      }
-      .card-body{
-        width: 90%;
-      }
     </style>
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
