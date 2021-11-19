@@ -45,7 +45,7 @@
           </ul>
         </nav>
 
-<div class="container" style="padding:120px">
+<div class="container" style="padding:60px">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
