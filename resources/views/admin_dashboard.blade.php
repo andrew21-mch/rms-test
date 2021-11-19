@@ -71,7 +71,7 @@
           <div class="overview-boxes">
             <div class="box">
               <div class="right-side">
-                <div class="box-topic">Form One</div>
+                <div class="box-topic">Form Five</div>
                 <div class="number">{{$count5}}</div>
                 <div class="indicator">
                   <span class="iconify" data-icon="emojione-v1:eye"></span>
@@ -83,7 +83,7 @@
 
             <div class="box">
               <div class="right-side">
-                <div class="box-topic">Form Two</div>
+                <div class="box-topic">LowerSixth</div>
                 <div class="number">{{$count6}}</div>
                 <div class="indicator">
                   <span class="iconify" data-icon="emojione-v1:eye"></span>
@@ -95,7 +95,7 @@
 
             <div class="box">
               <div class="right-side">
-                <div class="box-topic">Form Three</div>
+                <div class="box-topic">UpperSixth</div>
                 <div class="number">{{$count7}}</div>
                 <div class="indicator">
                   <span class="iconify" data-icon="emojione-v1:eye"></span>
