@@ -217,11 +217,10 @@
       </form>
       @endif
       @endforeach
-          <div class="container" style="padding:4px; margin-top:4px>
-            <div class="row col-md-12">
-              <a href="#" class="btn btn-success">View Marks</a>
-            </div>
-
-          </div>
+      <div class="container">
+        <div class="row col-md-12" style="padding:4px; margin-top:4px">
+          <a href="/viewAllResult/{{Session::get('subjectid')}}" class="btn btn-primary"> <h1>View Marks</h1></a>
+        </div>
+      </div>
 
       @endsection
