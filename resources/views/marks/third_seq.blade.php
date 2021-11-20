@@ -219,12 +219,11 @@
       </form>
       @endif
       @endforeach
-
+    </table>
       <div class="container">
         <div class="row col-md-12" style="padding:4px; margin-top:4px">
           <a href="/viewAllResult/{{Session::get('subjectid')}}" class="btn btn-primary"> <h1>View Marks</h1></a>
         </div>
       </div>
-      </table>
 
       @endsection

@@ -217,6 +217,8 @@
           </td>
         </tr>
       </form>
+    </table>
+      
       @endif
       @endforeach
       <div class="container">
