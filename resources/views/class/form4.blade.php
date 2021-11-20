@@ -57,8 +57,6 @@
           <td>{{$user->last_name}}</td>
           <td>{{$user->gender}}</td>
           <td>{{$user->date_of_birth}}</td>
-          <td></td>
-          <td></td>
 
           <td>
             <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
