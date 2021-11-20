@@ -101,7 +101,7 @@
                               </div>
 
                               <div class="form-group row justify-content-center">
-                                  <div class="col-md-5">
+                                  <div class="col-md-6">
                                     <label for="subject" >{{ __('Subject') }}</label>
                                     <select class="form-control" name="subject">
                                       <option value="">Select Subject</option>
@@ -115,7 +115,7 @@
                                           </span>
                                       @enderror
                                   </div>
-                                  <div class="col-md-5">
+                                  <div class="col-md-6">
                                     <label for="password-confirm" >{{ __('Option') }}</label>
                                     <select class="form-control" name="option">
                                       <option value="">Select Option</option>
@@ -134,7 +134,7 @@
 
 
                               <div class="form-group row justify-content-center">
-                                  <div class="col-md-5 mt-2">
+                                  <div class="col-md-6 mt-2">
                                     <label for="password" >{{ __('Password') }}</label>
                                       <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
@@ -144,7 +144,7 @@
                                           </span>
                                       @enderror
                                   </div>
-                                  <div class="col-md-5 mt-2">
+                                  <div class="col-md-6 mt-2">
                                     <label for="password-confirm" >{{ __('Confirm Password') }}</label>
                                       <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                   </div>
