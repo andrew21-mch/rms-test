@@ -1,5 +1,26 @@
 @extends('layouts.layout')
 @section('content')
+<style media="screen">
+  body{
+    height: 100%;
+    }
+    .container{
+      margin-top: 3%;
+    }
+    .form-group{
+      width: 100%;
+      height: 30%;
+    }
+    .col-md-10{
+    width: 100%;
+    }
+    .card-body{
+      width: 100%;
+      height: 60%; }
+    .row{
+      width: 98%;
+    }
+  </style>
 <div class="container" style="padding:120px">
     <div class="row justify-content-center">
         <div class="col-md-10">
