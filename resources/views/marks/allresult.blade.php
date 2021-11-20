@@ -230,7 +230,7 @@
         <tr class="row col-md-8">
           <div class="container">
             <div class="row">
-              <a href="/viewAllResult" class="btn btn-primary"> <h1>Back</h1></a>
+              <a href="/insert/insertmarks" class="btn btn-primary"> <h1>Back</h1></a>
             </div>
           </div>
         </tr>
