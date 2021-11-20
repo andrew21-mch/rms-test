@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style media="screen">
     body{
       height: 100%;
@@ -48,7 +47,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
-                <div class="card-header">Signup As Teacher</div>
+                <div class="card-header"><center><h1>Teacher Registration Form</h1></center></div>
 
                 <div class="card-body">
                   <form action="/create_account" method="post">
