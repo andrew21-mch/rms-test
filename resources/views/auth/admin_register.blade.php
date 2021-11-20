@@ -86,6 +86,7 @@
                       <select class="form-control" name="">
                         <option value="">Select Role</option>
                         <option value="100">Teacher</option>
+                        <option value="101">HOD</option>
                         <option value="200">Admin</option>
                       </select>
 
