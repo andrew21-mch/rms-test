@@ -217,9 +217,9 @@
       </form>
       @endif
       @endforeach
-          <div class="container">
+          <div class="container" style="padding:4px; margin-top:4px>
             <div class="row col-md-12">
-              <a href="#" class="btn btn-warning">View Marks</a>
+              <a href="#" class="btn btn-success">View Marks</a>
             </div>
 
           </div>
