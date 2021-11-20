@@ -44,9 +44,9 @@
           </ul>
         </nav>
         <div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px; height:80%">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card">
+            <div class="row justify-content-center" style="height:90%">
+                <div class="col-md-8" style="height:90%">
+                    <div class="card" style="height:90%">
                       <div class="card-header"><center><h1>Teacher Registration Form</h1></center></div>
 
                       <div class="card-body">
