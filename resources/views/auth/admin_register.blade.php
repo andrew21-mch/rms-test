@@ -4,9 +4,6 @@
   body{
     height: 100%;
     }
-    .container{
-      margin-top: 3%;
-    }
     .form-group{
       width: 100%;
       height: 30%;
