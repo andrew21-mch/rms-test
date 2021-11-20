@@ -22,12 +22,13 @@
       <input class = "form-control" type="hidden" name="subject_id" value="{{Session::get('subjectid')}}">
       <tr>
         <input class = "form-control" type="hidden" name="class_id" value="1" >
-        <td class="col"><input class = "form-control" type="text" name="id" value="{{$user->id}}"></td>
-        <td class="col"><input class = "form-control" type="text" name="last_name" value="{{$user->last_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="mark" value = "0"></td>
-          <td class="col"> <button type="submit" class="btn btn-primary">submit</button>
-          <button type="submit" class="btn btn-warning">Update</button</td>
+        <td class="col-md-1"><input class = "form-control col" type="text" name="id" value="{{$user->id}}"></td>
+        <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
+        <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
+        <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
+        <td class="col-md-2">
+          <button type="submit" class="btn btn-primary">submit</button>
+        </td>
       </tr>
       </form>
       @endif
@@ -53,14 +54,13 @@
       @csrf
       <input class = "form-control" type="hidden" name="subject_id" value="{{Session::get('subjectid')}}">
       <input class = "form-control" type="hidden" name="class_id" value="2" >
-        <td class="col"><input class = "form-control" type="text" name="id" value="{{$user->id}}"></td></td>
-        <td class="col"><input class = "form-control" type="text" name="last_name" value="{{$user->last_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="mark" value = "">
-          <td class="col"> <button type="submit" class="btn btn-warning">Update</button></td>
-          </select>
-        </td>
-        <td class="col"> <button type="submit">submit</button></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="id" value="{{$user->id}}"></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
       </tr>
     </form>
       @endif
@@ -85,12 +85,13 @@
       @csrf
       <input class = "form-control" type="hidden" name="subject_id" value="{{Session::get('subjectid')}}">
       <input class = "form-control" type="hidden" name="class_id" value="3" >
-        <td class="col"><input class = "form-control" type="text" name="id" value="{{$user->id}}"></td></td>
-        <td class="col"><input class = "form-control" type="text" name="last_name" value="{{$user->last_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
-        <td class="col"><input class = "form-control" type="text" name="mark" value=""></td>
-        <td class="col"> <button type="submit">submit</button></td>
-        <td class="col"> <button type="submit" class="btn btn-warning">Update</button></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="id" value="{{$user->id}}"></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
       </tr>
     </form>
     @endif
@@ -116,12 +117,13 @@
 
     <input class = "form-control" type="hidden" name="class_id" value="4" >
     <tr>
-      <td class="col"><input class = "form-control" type="text" name="id" value="{{$user->id}}"></td></td>
-      <td class="col"><input class = "form-control" type="text" name="last_name" value="{{$user->last_name}}" ></td>
-      <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
-      <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
-      <td class="col"> <button type="submit">submit</button></td>
-      <td class="col"> <button type="submit" class="btn btn-warning">Update</button></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="id" value="{{$user->id}}"></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
+      <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
+      <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
     </tr>
 
     </form>
@@ -147,12 +149,13 @@
         <input class = "form-control" type="hidden" name="subject_id" value="{{Session::get('subjectid')}}">
         <input class = "form-control" type="hidden" name="class_id" value="5" >
         <tr>
-          <td class="col"><input class = "form-control" type="text" name="id" value="{{$user->id}}"></td></td>
-          <td class="col"><input class = "form-control" type="text" name="last_name" value="{{$user->last_name}}" ></td>
-          <td class="col"><input class = "form-control" type="text" name="first_name" value="{{$user->first_name}}" ></td>
-          <td class="col"><input class = "form-control" type="text" name="mark" value = ""></td>
-          <td class="col"> <button type="submit">submit</button></td>
-          <td class="col"> <button type="submit" class="btn btn-warning">Update</button></td>
+          <td class="col-md-1"><input class = "form-control col" type="text" name="id" value="{{$user->id}}"></td>
+          <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
+          <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
+          <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
+          <td class="col-md-2">
+            <button type="submit" class="btn btn-primary">submit</button>
+          </td>
         </tr></form>
       @endif
       @endforeach
