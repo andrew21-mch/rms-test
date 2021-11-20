@@ -217,14 +217,11 @@
       </form>
       @endif
       @endforeach
-      <table>
-        <tr class="row col-md-8">
           <div class="container">
-            <div class="row">
+            <div class="row col-md-12">
               <a href="#" class="btn btn-warning">View Marks</a>
             </div>
 
           </div>
-        </tr>
-      </table>
+
       @endsection
