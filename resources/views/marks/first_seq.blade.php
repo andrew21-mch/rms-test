@@ -26,8 +26,9 @@
         <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
         <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
         <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-          <td class="col-md-1">
-            <button type="submit" class="btn btn-primary">submit</button>          </td>
+        <td class="col-md-2">
+          <button type="submit" class="btn btn-primary">submit</button>
+        </td>
       </tr>
       </form>
       @endif
@@ -57,8 +58,9 @@
       <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
       <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
       <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-        <td class="col-md-1">
-          <button type="submit" class="btn btn-primary">submit</button>          </td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
       </tr>
     </form>
       @endif
@@ -87,8 +89,9 @@
       <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
       <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
       <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-        <td class="col-md-1">
-          <button type="submit" class="btn btn-primary">submit</button>          </td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
       </tr>
     </form>
     @endif
@@ -118,8 +121,9 @@
       <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
       <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
       <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-        <td class="col-md-1">
-          <button type="submit" class="btn btn-primary">submit</button>          </td>
+      <td class="col-md-2">
+        <button type="submit" class="btn btn-primary">submit</button>
+      </td>
     </tr>
 
     </form>
@@ -149,8 +153,9 @@
           <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
           <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
           <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-            <td class="col-md-1">
-              <button type="submit" class="btn btn-primary">submit</button>          </td>
+          <td class="col-md-2">
+            <button type="submit" class="btn btn-primary">submit</button>
+          </td>
         </tr></form>
       @endif
       @endforeach
@@ -177,8 +182,9 @@
           <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
           <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
           <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-            <td class="col-md-1">
-              <button type="submit" class="btn btn-primary">submit</button>          </td>
+          <td class="col-md-2">
+            <button type="submit" class="btn btn-primary">submit</button>
+          </td>
         </tr>
         </form>
       @endif
@@ -206,8 +212,9 @@
           <td class="col-md-3"><input class = "form-control col" type="text" name="last_name" value="{{$user->last_name}}" ></td>
           <td class="col-md-3"><input class = "form-control col" type="text" name="first_name" value="{{$user->first_name}}" ></td>
           <td class="col-md-1"><input class = "form-control col" type="text" name="mark" value = "0"></td>
-            <td class="col-md-1">
-              <button type="submit" class="btn btn-primary">submit</button>          </td>
+          <td class="col-md-2">
+            <button type="submit" class="btn btn-primary">submit</button>
+          </td>
         </tr>
       </form>
       @endif
