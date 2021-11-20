@@ -20,10 +20,10 @@
             height: 30%;
           }
           .col-md-8{
-          width: 100%;
+          width: 90%;
           }
           .card-body{
-            width: 100%;
+            width: 80%;
             height: 60%; }
           .row{
             width: 98%;
