@@ -45,7 +45,7 @@ Route::view('/register', 'auth.register');
 Route::view('/adminRegisterTeacher', 'auth.admin_register');
 Route::view('/allresult', 'marks.allresult');
 Route::view('/search_tips', 'search_tips');
-
+Route::view('/conact_us','contact');
 
 Route::view('/Action/registerStudent', 'registerStudent');
 Route::view('/reportCard','reportCard');
