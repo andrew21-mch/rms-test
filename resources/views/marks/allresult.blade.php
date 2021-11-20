@@ -230,7 +230,11 @@
         <tr class="row col-md-8">
           <div class="container">
             <div class="row">
+<<<<<<< HEAD
               <a href="/insert/insertmarks" class="btn btn-primary"> <h1>Back</h1></a>
+=======
+              <a href="/" class="btn btn-primary"> <h1>Back</h1></a>
+>>>>>>> 172fdbf8c704076db8d91e7217913bb4a1848975
             </div>
           </div>
         </tr>
