@@ -22,15 +22,15 @@
       @foreach ($res as $user)
       @if($user->class_id == 1)
       <tr>
-        <td class="col">{{$user->student_id}}</td>
-        <td class="col">{{$user->last_name}}</td>
-        <td class="col">{{$user->first_name}}</td>
-        <td class="col">{{$user->mark1}}</td>
-        <td class="col">{{$user->mark2}}</td>
-        <td class="col">{{$user->mark3}}</td>
-        <td class="col">{{$user->mark4}}</td>
-        <td class="col">{{$user->mark5}}</td>
-        <td class="col">{{$user->mark6}}</td>
+        <td class="col-md-1">{{$user->student_id}}</td>
+        <td class="col-md-2">{{$user->last_name}}</td>
+        <td class="col-md-2">{{$user->first_name}}</td>
+        <td class="col-d-1">{{$user->mark1}}</td>
+        <td class="col-d-1">{{$user->mark2}}</td>
+        <td class="col-d-1">{{$user->mark3}}</td>
+        <td class="col-d-1">{{$user->mark4}}</td>
+        <td class="col-d-1">{{$user->mark5}}</td>
+        <td class="col-d-1">{{$user->mark6}}</td>
       </tr>
       @endif
       @endforeach
@@ -56,15 +56,15 @@
       @foreach ($res as $user)
       @if($user->class_id == 2)
       <tr>
-        <td class="col">{{$user->student_id}}</td>
-        <td class="col">{{$user->last_name}}</td>
-        <td class="col">{{$user->first_name}}</td>
-        <td class="col">{{$user->mark1}}</td>
-        <td class="col">{{$user->mark2}}</td>
-        <td class="col">{{$user->mark3}}</td>
-        <td class="col">{{$user->mark4}}</td>
-        <td class="col">{{$user->mark5}}</td>
-        <td class="col">{{$user->mark6}}</td>
+        <td class="col-md-1">{{$user->student_id}}</td>
+        <td class="col-md-2">{{$user->last_name}}</td>
+        <td class="col-md-2">{{$user->first_name}}</td>
+        <td class="col-d-1">{{$user->mark1}}</td>
+        <td class="col-d-1">{{$user->mark2}}</td>
+        <td class="col-d-1">{{$user->mark3}}</td>
+        <td class="col-d-1">{{$user->mark4}}</td>
+        <td class="col-d-1">{{$user->mark5}}</td>
+        <td class="col-d-1">{{$user->mark6}}</td>
       </tr>
       @endif
       @endforeach
@@ -89,15 +89,15 @@
       @foreach ($res as $user)
       @if($user->class_id == 3)
       <tr>
-        <td class="col">{{$user->student_id}}</td>
-        <td class="col">{{$user->last_name}}</td>
-        <td class="col">{{$user->first_name}}</td>
-        <td class="col">{{$user->mark1}}</td>
-        <td class="col">{{$user->mark2}}</td>
-        <td class="col">{{$user->mark3}}</td>
-        <td class="col">{{$user->mark4}}</td>
-        <td class="col">{{$user->mark5}}</td>
-        <td class="col">{{$user->mark6}}</td>
+        <td class="col-md-1">{{$user->student_id}}</td>
+        <td class="col-md-2">{{$user->last_name}}</td>
+        <td class="col-md-2">{{$user->first_name}}</td>
+        <td class="col-d-1">{{$user->mark1}}</td>
+        <td class="col-d-1">{{$user->mark2}}</td>
+        <td class="col-d-1">{{$user->mark3}}</td>
+        <td class="col-d-1">{{$user->mark4}}</td>
+        <td class="col-d-1">{{$user->mark5}}</td>
+        <td class="col-d-1">{{$user->mark6}}</td>
       </tr>
     @endif
     @endforeach
@@ -121,15 +121,15 @@
       @foreach ($res as $user)
     @if($user->class_id == 4)
     <tr>
-      <td class="col">{{$user->student_id}}</td>
-      <td class="col">{{$user->last_name}}</td>
-      <td class="col">{{$user->first_name}}</td>
-      <td class="col">{{$user->mark1}}</td>
-      <td class="col">{{$user->mark2}}</td>
-      <td class="col">{{$user->mark3}}</td>
-      <td class="col">{{$user->mark4}}</td>
-      <td class="col">{{$user->mark5}}</td>
-      <td class="col">{{$user->mark6}}</td>
+      <td class="col-md-1">{{$user->student_id}}</td>
+      <td class="col-md-2">{{$user->last_name}}</td>
+      <td class="col-md-2">{{$user->first_name}}</td>
+      <td class="col-d-1">{{$user->mark1}}</td>
+      <td class="col-d-1">{{$user->mark2}}</td>
+      <td class="col-d-1">{{$user->mark3}}</td>
+      <td class="col-d-1">{{$user->mark4}}</td>
+      <td class="col-d-1">{{$user->mark5}}</td>
+      <td class="col-d-1">{{$user->mark6}}</td>
     </tr>
     @endif
     @endforeach
@@ -153,15 +153,15 @@
       @foreach ($res as $user)
     @if($user->class_id == 5)
     <tr>
-      <td class="col">{{$user->student_id}}</td>
-      <td class="col">{{$user->last_name}}</td>
-      <td class="col">{{$user->first_name}}</td>
-      <td class="col">{{$user->mark1}}</td>
-      <td class="col">{{$user->mark2}}</td>
-      <td class="col">{{$user->mark3}}</td>
-      <td class="col">{{$user->mark4}}</td>
-      <td class="col">{{$user->mark5}}</td>
-      <td class="col">{{$user->mark6}}</td>
+      <td class="col-md-1">{{$user->student_id}}</td>
+      <td class="col-md-2">{{$user->last_name}}</td>
+      <td class="col-md-2">{{$user->first_name}}</td>
+      <td class="col-d-1">{{$user->mark1}}</td>
+      <td class="col-d-1">{{$user->mark2}}</td>
+      <td class="col-d-1">{{$user->mark3}}</td>
+      <td class="col-d-1">{{$user->mark4}}</td>
+      <td class="col-d-1">{{$user->mark5}}</td>
+      <td class="col-d-1">{{$user->mark6}}</td>
     </tr>
       @endif
       @endforeach
@@ -183,15 +183,15 @@
       @foreach ($res as $user)
       @if($user->class_id == 6)
       <tr>
-        <td class="col">{{$user->student_id}}</td>
-        <td class="col">{{$user->last_name}}</td>
-        <td class="col">{{$user->first_name}}</td>
-        <td class="col">{{$user->mark1}}</td>
-        <td class="col">{{$user->mark2}}</td>
-        <td class="col">{{$user->mark3}}</td>
-        <td class="col">{{$user->mark4}}</td>
-        <td class="col">{{$user->mark5}}</td>
-        <td class="col">{{$user->mark6}}</td>
+        <td class="col-md-1">{{$user->student_id}}</td>
+        <td class="col-md-2">{{$user->last_name}}</td>
+        <td class="col-md-2">{{$user->first_name}}</td>
+        <td class="col-d-1">{{$user->mark1}}</td>
+        <td class="col-d-1">{{$user->mark2}}</td>
+        <td class="col-d-1">{{$user->mark3}}</td>
+        <td class="col-d-1">{{$user->mark4}}</td>
+        <td class="col-d-1">{{$user->mark5}}</td>
+        <td class="col-d-1">{{$user->mark6}}</td>
       </tr>
       @endif
       @endforeach
@@ -214,15 +214,15 @@
       @foreach ($res as $user)
       @if($user->class_id == 7)
       <tr>
-        <td class="col">{{$user->student_id}}</td>
-        <td class="col">{{$user->last_name}}</td>
-        <td class="col">{{$user->first_name}}</td>
-        <td class="col">{{$user->mark1}}</td>
-        <td class="col">{{$user->mark2}}</td>
-        <td class="col">{{$user->mark3}}</td>
-        <td class="col">{{$user->mark4}}</td>
-        <td class="col">{{$user->mark5}}</td>
-        <td class="col">{{$user->mark6}}</td>
+        <td class="col-md-1">{{$user->student_id}}</td>
+        <td class="col-md-2">{{$user->last_name}}</td>
+        <td class="col-md-2">{{$user->first_name}}</td>
+        <td class="col-d-1">{{$user->mark1}}</td>
+        <td class="col-d-1">{{$user->mark2}}</td>
+        <td class="col-d-1">{{$user->mark3}}</td>
+        <td class="col-d-1">{{$user->mark4}}</td>
+        <td class="col-d-1">{{$user->mark5}}</td>
+        <td class="col-d-1">{{$user->mark6}}</td>
       </tr>
       @endif
       @endforeach
