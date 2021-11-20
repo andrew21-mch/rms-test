@@ -9,25 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style media="screen">
-    body{
-      height: 100%;
-      }
-      .container{
-        margin-top: 3%;
-      }
-      .form-group{
-        width: 100%;
-        height: 30%;
-      }
-      .col-md-10{
-      width: 100%;
-      }
-      .card-body{
-        width: 100%;
-        height: 60%; }
-      .row{
-        width: 98%;
-      }
+        body{
+          height: 100%;
+          }
+          .container{
+            margin-top: 3%;
+          }
+          .form-group{
+            width: 100%;
+            height: 30%;
+          }
+          .col-md-8{
+          width: 100%;
+          }
+          .card-body{
+            width: 100%;
+            height: 60%; }
+          .row{
+            width: 98%;
+          }
     </style>
   </head>
   <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
@@ -45,9 +45,9 @@
           </ul>
         </nav>
 
-<div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px"">
+<div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
