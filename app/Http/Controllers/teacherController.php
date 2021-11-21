@@ -23,7 +23,7 @@ class teacherController extends Controller
         'first_name' => 'required',
         'last_name' => 'required',
         'email' => 'required|unique:rms_teachers',
-        'password' => 'required|min:6|max:12',
+        'password' => 'required',
         'password_confirmation' => 'required',
         'verify' => 'required',
         'role' => 'required'
