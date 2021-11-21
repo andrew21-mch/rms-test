@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Rms_subject;
 use App\Models\Rms_teacher;
 use Illuminate\Support\Facades\Hash;
+use Crypt;
 use Session;
 
 
@@ -36,14 +37,14 @@ class teacherController extends Controller
         $teacher->subject_id = $request->subject;
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
-        $teacher->password = Hash::make($request->password);
+        $teacher->password = Crypt::encrypt($request->password);
 
         if ('user1'==200) {
           $teacher->role = $request->role;
         }
 
         if($teacher->save()){
-          return view('auth.register',['data','successfully Registered']);
+          return view('auth.login',['data','successfully Registered']);
 
         }
       }
