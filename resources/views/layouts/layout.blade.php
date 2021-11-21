@@ -217,6 +217,102 @@
 
       </nav>
       @endif
+
+      @if(Session::get('user1')==101)
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus'></i>
+          <span class="logo_name">RMS</span>
+        </div>
+
+          <ul class="nav-links">
+            <li>
+              <a href="#">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="admin_name">Hello {{Session::get('user')}}</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="active">
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="/teacher">
+                <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
+                <span class="links_name">Teachers</span>
+              </a>
+            </li>
+            <li>
+              <a href="/student">
+                <i><span class="iconify" data-icon="noto:man-student-medium-dark-skin-tone" data-rotate="180deg" data-flip="vertical"></span></i>
+                </i>
+                <span class="links_name">Students</span>
+              </a>
+            </li>
+            <li>
+              <a href="/Action/registerStudent">
+                <i><span class="iconify" data-icon="noto:man-student-medium-dark-skin-tone" data-rotate="180deg" data-flip="vertical"></span></i>
+                </i>
+                <span class="links_name">Add Student</span>
+              </a>
+
+            </li>
+            <li>
+              <a href="/view/classes">
+                <i><span class="iconify" data-icon="mdi:google-classroom" style="color: white;" data-rotate="180deg"></span>
+                  </i>
+                <span class="links_name">Classes</span>
+              </a>
+            </li>
+            <li>
+              <a href="/subjects">
+                <i><span class="iconify" data-icon="ic:sharp-subject" style="color: white;" data-rotate="180deg"></span></i>
+                <span class="links_name">Subjects</span>
+              </a>
+            </li>
+            <li>
+              <a href="/analytics">
+                <i class='bx bx-pie-chart-alt-2' ></i>
+                <span class="links_name">Analytics</span>
+              </a>
+            </li>
+            <li class="log_out">
+              <a href="/userlogout">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+      <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Dashboard</span>
+          </div>
+          <div class="search-box">
+            <form class="" action="/search" method="get">
+              <input type="text" name="search" placeholder="Search">
+              <button type="submit"><i class='bx bx-search' ></i></button>
+            </form>
+
+          </div>
+
+            @if(Session::has('user'))
+              <div class="dropdown">
+               <button class="dropbtn">Hello {{Session::get('user')}}</button>
+               <div class="dropdown-content">
+                 <a href="/userlogout">Logout</a>
+                 <a href="/profile_view/{{Session::get('userid')}}">Update</a>
+               </div>
+             </div>
+          @endif
+
+        </nav>
+        @endif
 <div class="container">
            @yield('content')
      </div>

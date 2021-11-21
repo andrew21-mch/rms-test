@@ -101,7 +101,7 @@
                               </div>
 
                               <div class="form-group row justify-content-center">
-                                  <div class="col-md-6">
+                                  <div class="col-md-3">
                                     <label for="subject" >{{ __('Subject') }}</label>
                                     <select class="form-control" name="subject">
                                       <option value="">Select Subject</option>
@@ -114,6 +114,20 @@
                                               <strong>{{ $message }}</strong>
                                           </span>
                                       @enderror
+
+                                  </div>
+                                  <div class="col-md-3">
+                                    <label for="subject" >{{ __('Subject') }}</label>
+                                    <select class="form-control" name="subject">
+                                      <option value="">Select Role</option>
+                                      <option value="100">Teacher</option>
+                                    </select>
+                                        @error('subject')
+                                          <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $message }}</strong>
+                                          </span>
+                                      @enderror
+
                                   </div>
                                   <div class="col-md-3">
                                     <label for="password-confirm" >{{ __('Option') }}</label>
