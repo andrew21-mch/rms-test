@@ -136,7 +136,7 @@
                               </span>
                           @enderror
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-3">
                         <label for="password-confirm" >{{ __('Option') }}</label>
                         <select class="form-control" name="option">
                           <option value="">Select Option</option>
@@ -145,6 +145,15 @@
                           @endforeach
                         </select>
                         @error('option')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span>
+                      @enderror
+                      </div>
+                      <div class="col-md-3">
+                        <label for="verify" >{{ __('Verification') }}</label>
+                        <input id="verify" type="text" class="form-control @error('verify') is-invalid @enderror" name="verify" value="{{ old('verify') }}" required autocomplete="verify">
+                        @error('verify')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                           </span>

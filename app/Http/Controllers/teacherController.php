@@ -21,9 +21,10 @@ class teacherController extends Controller
         'last_name' => 'required',
         'email' => 'required|unique:rms_teachers',
         'password' => 'required|min:6|max:12',
-        'password_confirmation' => 'required|min:6|max:12'
+        'password_confirmation' => 'required|min:6|max:12',
+        'verify' => 'required'
       ]);
-      if($request->password == $request->password_confirmation)
+      if(($request->password == $request->password_confirmation) && ($request->verify == 'STFRM2021'))
       {
         $teacher = new Rms_teacher;
         $teacher->teacher_first_name = $request->first_name;
@@ -73,5 +74,3 @@ class teacherController extends Controller
           }
         }
       }
-    
-
