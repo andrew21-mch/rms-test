@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Rms_subject;
 use App\Models\Rms_teacher;
+use Illuminate\Support\Facades\Hash;
 use Session;
+
 
 
 class teacherController extends Controller
@@ -34,8 +36,7 @@ class teacherController extends Controller
         $teacher->subject_id = $request->subject;
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
-        $teacher->password = $request->password;
-        $teacher->role = $request->role;
+        $teacher->password = hash:make($request->password);
 
         if ('user1'==200) {
           $teacher->role = $request->role;
