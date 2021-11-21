@@ -38,6 +38,7 @@ class teacherController extends Controller
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
         $teacher->password = $request->password;
+        $teacher->role = $request->role;
 
         if ('user1'==200) {
           $teacher->role = $request->role;
