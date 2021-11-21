@@ -45,7 +45,7 @@ class teacherController extends Controller
         }
       }
       else{
-        return '<script type="text/javascript">alert("Passwords Do not match!");</script>';
+        return '<script type="text/javascript">alert("Passwords Do not match! OR Your Verification Code is wrong");</script>';
       }
     }
 
