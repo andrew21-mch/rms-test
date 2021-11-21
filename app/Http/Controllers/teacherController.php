@@ -36,7 +36,7 @@ class teacherController extends Controller
         $teacher->subject_id = $request->subject;
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
-        $teacher->password = Hash:make($request->password);
+        $teacher->password = Hash::make($request->password);
 
         if ('user1'==200) {
           $teacher->role = $request->role;
