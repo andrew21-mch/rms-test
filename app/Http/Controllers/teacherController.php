@@ -37,7 +37,7 @@ class teacherController extends Controller
         $teacher->subject_id = $request->subject;
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
-        $teacher->password = Crypt::encrypt($request->password);
+        $teacher->password = Crypt::encrypt($request->input('password'));
 
         if ('user1'==200) {
           $teacher->role = $request->role;
