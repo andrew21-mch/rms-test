@@ -30,6 +30,7 @@ class teacherController extends Controller
       ]);
       if(($request->password == $request->password_confirmation) && ($request->verify == 'STFRM2021'))
       {
+        $pass = Hash::make($request->password);
         $teacher = new Rms_teacher;
         $teacher->teacher_first_name = $request->first_name;
         $teacher->teacher_last_name =  $request->last_name;
@@ -37,7 +38,7 @@ class teacherController extends Controller
         $teacher->subject_id = $request->subject;
         $teacher->option_id = $request->option;
         $teacher->teacher_phone = $request->phone;
-        $teacher->password = Crypt::encrypt($request->input('password'));
+        $teacher->password = $pass;
 
         if ('user1'==200) {
           $teacher->role = $request->role;
