@@ -1,6 +1,21 @@
 @extends('layouts.layout')
 @section('content')
 
+<style>
+  center{
+    background-color: gray;
+    margin: 0.5%, 0% ,0.5% ,0%;
+    border-radius: 5px;
+    padding: 3px 1.5px 3px 1.5px;
+    width: 100%;
+  }
+  hr{
+    margin: 0.5%, 0% ,0.5% ,0%;
+  }
+  .customers th{
+    background-color: gray;
+  }
+  </style>
   <div class="container">
 
     <div class="class">
@@ -8,7 +23,7 @@
 
       </div>
       <table id="customers">
-        <h2>Form 1</h2>
+        <hr><center><h2>Form 1</h2></center><hr>
         <tr>
           <th>Student First Name</th>
           <th>Student Last Name</th>
@@ -34,7 +49,7 @@
         @endif
         @endforeach
         <table id="customers">
-          <h2>Form 2</h2>
+          <hr>  <center><h2>Form 2</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
@@ -62,7 +77,7 @@
         @endforeach
 
         <table id="customers">
-          <h2>Form 3</h2>
+        <hr>  <center><h2>Form 3</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
@@ -90,7 +105,7 @@
         @endforeach
 
         <table id="customers">
-          <h2>Form 4</h2>
+          <hr>  <center><h2>Form 4</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
@@ -118,7 +133,7 @@
         @endforeach
 
         <table id="customers">
-          <h2>Form 5</h2>
+          <hr>  <center><h2>Form 5</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
@@ -146,7 +161,7 @@
         @endforeach
 
         <table id="customers">
-          <h2>LowerSixth</h2>
+        <hr>  <center><h2>LowerSixth</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
@@ -173,7 +188,7 @@
 
         @endforeach
         <table id="customers">
-          <h2>UpperSixth</h2>
+          <hr><center><h2>UpperSixth</h2></center><hr>
           <tr>
             <th>Student First Name</th>
             <th>Student Last Name</th>
