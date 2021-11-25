@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 @section('content')
 <div class="container">
-
   <div class="home-content">
+      <center><h1>View Classes</h1></center><hr>
     <div class="overview-boxes">
       <a class="box" href="/form1">
         <div class="right-side">

@@ -17,10 +17,9 @@
   }
   </style>
   <div class="container">
-
     <div class="class">
-      <br><br><br><br
-
+      <br><br><br><br>
+    <center><h1>Detailed Classes</h1></center>
       </div>
       <table id="customers">
         <hr><center><h2>Form 1</h2></center><hr>
@@ -148,7 +147,7 @@
             <td>{{$user->first_name}}</td>
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
-            <td>{{$user->first_name}}</td>
+            <td>{{$user->date_of_birth}}</td>
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
@@ -176,7 +175,7 @@
             <td>{{$user->first_name}}</td>
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
-            <td>{{$user->first_name}}</td>
+            <td>{{$user->date_of_birth}}</td>
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
@@ -203,7 +202,7 @@
             <td>{{$user->first_name}}</td>
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
-            <td>{{$user->first_name}}</td>
+            <td>{{$user->date_of_birth}}</td>
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use App\Models\Rms_student;
 use App\Models\Rms_teacher;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,8 +29,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      if(env(key: 'APP_KEY' !== 'local')){
+      if(ENV(key: 'APP_KEY' !== 'local')){
         URL::forceScheme(scheme: 'https');
+      }
+      else{
+        URL::forceScheme(scheme: 'http');
       }
         view::share('class',DB::table('rms_classes')->get());
         view::share('data', DB::table('rms_students')->get());

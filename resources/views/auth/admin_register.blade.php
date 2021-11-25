@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
-      <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('layouts.layout')
+@section('content')
     <style media="screen">
+    .card-header{
+      margin-top: 80px;
+    }
     body{
       height: 100%;
-      }
-      .container{
-        margin-top: 3%;
-      }
+    }
       .form-group{
         width: 100%;
         height: 30%;
@@ -29,8 +22,7 @@
       }
     </style>
   </head>
-  <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
-    <div class="container" style="padding:60">
+    <div class="container">
       <div class="row justify-content-center">
           <div class="col-md-10">
               <div class="card">
@@ -195,5 +187,6 @@
               </form>
           </div>
       </div>
+  @endsection
     </body>
 </html>
