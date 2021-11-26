@@ -24,6 +24,9 @@ use App\Http\Controllers\teacherController;
 */
 
 //
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
 //views
 Route::view('/form1', 'class.form1');
 Route::view('/form2', 'class.form2');
