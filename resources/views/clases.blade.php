@@ -108,7 +108,7 @@
           </div>
       <span class="iconify" data-icon="icons8:student" style="color: gray;" data-width="50" data-height="50" data-flip="horizontal"></span>
     </a>
-    <a class="box" href="/report">
+    <a class="box" href="/student">
       <div class="right-side">
         <div class="box-topic">Total Enrollment</div>
         <div class="counters">Total: {{$count}}</div>
