@@ -27,7 +27,8 @@
    .dropbtn {
      background-color: #000C66;
      color: white;
-     padding: 13px;
+     padding: 12px;
+     height: 80%;
      font-size: 16px;
      border: none;
    }
@@ -109,4 +110,34 @@ a#box:hover{
 .layout {
   background-color: #ADD8E6;
   height: 100%;
+}
+
+
+
+
+
+
+
+.dropdown-container {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-container a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-container a:hover {
+  background-color: #ddd;
 }

@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         <li>
           <a href="/subjects">
             <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-            <span class="links_name">My Subject</span>
+            <span class="links_name">View Subject</span>
           </a>
         </li>
         <li>
@@ -52,7 +52,7 @@
         <li>
           <a href="/teacher">
             <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-            <span class="links_name">My Dashboard</span>
+            <span class="links_name">Insert Marks</span>
           </a>
         </li>
         <li>

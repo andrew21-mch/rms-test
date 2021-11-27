@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Rms_teacher;
 use App\Models\Rms_log;
 use Session;
+use Carbon;
 
 
 class LoginController extends Controller
@@ -28,6 +29,8 @@ class LoginController extends Controller
             $request->session()->put('user',$data['teacher_last_name']);
             $request->session()->put('userid',$data['id']);
             $log->teacher_id = $data['id'];
+            $log->login_date = now();
+            $log->login_time = now();
             $log->save();
             $request->session()->put('subjectid',$data['subject_id']);
             $request->session()->put('user1',$data['role']);
@@ -37,6 +40,8 @@ class LoginController extends Controller
             $request->session()->put('user',$data['teacher_last_name']);
             $request->session()->put('userid',$data['id']);
             $log->teacher_id = $data['id'];
+            $log->login_date = now();
+            $log->login_time = now();
             $log->save();
             $request->session()->put('user1',$data['role']);
             $request->session()->put('subjectid',$data['subject_id']);

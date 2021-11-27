@@ -233,33 +233,30 @@
       </div>
       @endif
     </div>
-
-  <!-- Loading Scripts -->
-
-	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
- <script>
-$(function () {
-$("[data-toggle=tooltip]").tooltip();
-    });
-function CallPrint(strid) {
-var prtContent = document.getElementById("print");
-var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
-WinPrint.document.head.append(document.head)
-WinPrint.document.write(prtContent.outerHTML);
-WinPrint.document.close();
-WinPrint.focus();
-WinPrint.print();
-WinPrint.close();
-}
-</script>
       </body>
+
+      <!-- Loading Scripts -->
+
+    	<!-- Loading Scripts -->
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap-select.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/jquery.dataTables.min.js"></script>
+    	<script src="js/dataTables.bootstrap.min.js"></script>
+    	<script src="js/Chart.min.js"></script>
+    	<script src="js/fileinput.js"></script>
+    	<script src="js/chartData.js"></script>
+    	<script src="js/main.js"></script>
+     <script>
+    function CallPrint(strid) {
+    var prtContent = document.getElementById("print");
+    var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    WinPrint.document.head.append(document.head)
+    WinPrint.document.write(prtContent.outerHTML);
+    WinPrint.document.close();
+    WinPrint.focus();
+    WinPrint.print();
+    WinPrint.close();
+    }
+    </script>
 </html>
