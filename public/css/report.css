@@ -146,6 +146,7 @@ a#box:hover{
   text-align: center;
    background-color:blue;
    bottom:0;
+   left:0;
    width: 100%;
    position: fixed;
    opacity: 95%;
