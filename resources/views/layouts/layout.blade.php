@@ -321,7 +321,7 @@
           <footer class="page-footer font-small blue">
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright: Skye8
+            <div class="footer-copyright text-center py-3">© 2021 Copyright SKYE8-LTD
             </div>
             <!-- Copyright -->
 
