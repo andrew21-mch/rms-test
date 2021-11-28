@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('content')
+<center><h1> Contact Us</h1></center>
 <!-- Wrapper container -->
 <div class="container py-4">
 
@@ -49,4 +50,3 @@
 
 <!-- SB Forms JS -->
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-@endsecttion
