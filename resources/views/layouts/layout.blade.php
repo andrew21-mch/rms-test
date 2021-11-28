@@ -313,9 +313,22 @@
 
         </nav>
         @endif
-<div class="container">
+        <div class="container">
            @yield('content')
-     </div>
+         </div>
+
+                   <!-- Footer -->
+          <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: Skye8
+            </div>
+            <!-- Copyright -->
+
+          </footer>
+          <!-- Footer -->
+
+
 
      <script>
       let sidebar = document.querySelector(".sidebar");

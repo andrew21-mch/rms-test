@@ -44,5 +44,6 @@
         @endif
     @endforeach
     @endif
+  </table>
 
 @endsection

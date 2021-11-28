@@ -106,6 +106,7 @@ a#box:hover{
 .container {
   background-color: white;
   height: 100%;
+  margin-bottom: 100px;
 }
 .layout {
   background-color: #ADD8E6;
@@ -140,4 +141,17 @@ a#box:hover{
 /* Add a grey background color to dropdown links on hover */
 .dropdown-container a:hover {
   background-color: #ddd;
+}
+.page-footer {
+  text-align: center;
+   background-color:blue;
+   bottom:0;
+   width: 100%;
+   position: fixed;
+   opacity: 95%;
+   color:white
+}
+.page-footer:hover{
+  color:white;
+  background-color: green;
 }

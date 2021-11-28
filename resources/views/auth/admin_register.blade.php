@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('content')
+<link rel="stylesheet" href="/css/report.css">
     <style media="screen">
     .card-header{
       margin-top: 80px;
