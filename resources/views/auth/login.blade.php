@@ -40,7 +40,7 @@
               <a class="nav-link" id="login" data-toggle="login" href="/" role="tab" >Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="contact">Contact</a>
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="/contact_us">Contact</a>
             </li>
           </ul>
         </nav>
