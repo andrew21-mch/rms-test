@@ -46,6 +46,7 @@
         <th>Student Last Name</th>
         <th>Gender</th>
         <th>DOB</th>
+        <th colspan="2">#</th>
       </tr>
 
       @foreach ($data as $user)
@@ -55,6 +56,8 @@
           <td>{{$user->last_name}}</td>
           <td>{{$user->gender}}</td>
           <td>{{$user->date_of_birth}}</td>
+          <td></td>
+          <td></td>
         </tr>
         @endif
       @endforeach
