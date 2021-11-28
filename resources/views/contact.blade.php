@@ -1,11 +1,11 @@
 @extends('layouts.layout')
 @section('content')
-<center><h1> Contact Us</h1></center>
 <!-- Wrapper container -->
 <div class="container py-4">
 
   <!-- Bootstrap 5 starter form -->
-  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  <form id="contactForm" action="contact_us">
+    <center><h1> Contact Us</h1></center>
 
     <!-- Name input -->
     <div class="mb-3">
