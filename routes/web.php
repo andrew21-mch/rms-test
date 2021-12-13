@@ -97,6 +97,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Post routes.
 Route::post('userlogin',[LoginController::class, 'login']);
 Route::post('/registStudent', [studentController::class, 'registStudent']);
+Route::post('/registSubject', [subjectController::class, 'addsubject']);
 Route::post('/create_account', [teacherController::class, 'createAccount']);
 Route::post('insert_sequence1', [resultController::class, 'insertFirstSequence']);
 Route::get('/update_sequence1/{id}', [resultController::class, 'updateFirstSequence']);
