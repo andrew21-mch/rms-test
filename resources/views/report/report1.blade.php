@@ -124,11 +124,25 @@
             <?php $tmarks = 0?>
         @foreach($data1 as $data)
           <tr>
-            <?php $coef = $data->coefficient+$coef ?>
+            <?php $coef = $data->coefficient+$coef
+            if($data->mark1 == NULL){
+
+            }?>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
             <td>{{$data->mark1}}</td>
             <td>{{$data->mark2}}</td>
+            <?php if($data->mark1 == NULL){
+              $data->mark1 == $data->mark2;
+            }
+            elseif($data->mark2 == NULL){
+              $data->mark2 = $data->mark1
+            }
+            else{
+              $data->mark1 == $data->mark1;
+              $data->mark2 == $data->mark2
+            }
+            ?>
             <td>{{($data->mark1 + $data->mark2)/2}}</td>
             <td>{{(($data->mark1 + $data->mark2)/2)*$data->coefficient}}</td>
             <td>{{$data->teacher_last_name}}</td>
