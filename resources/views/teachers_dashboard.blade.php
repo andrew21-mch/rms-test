@@ -17,42 +17,42 @@
     @endforeach
       <div class="overview-boxes" id="overview-boxes" style="margin: 4%;">
           <a href="/insertmarks/first1" class="box" id="box" style="height: 120px; width:100%; text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 1
             </div>
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/seconds2" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 2
             </div>
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/thirds3" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 3
             </div>
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/fourths4" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 4
             </div>
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/fifths5" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 5
             </div>
           </a>
       </div>
       <div class="overview-boxes" style="margin: 4%">
           <a href="/insertmarks/sixths6" class="box" id="box" style="height: 120px; width:100%;  text-decoration: none">
-            <div  style="font-size: 40px; text-decoration: none; border-style:none; color:orange">
+            <div  style="font-size: 30px; text-decoration: none; border-style:none; color:orange">
               Sequence 6
             </div>
           </a>
