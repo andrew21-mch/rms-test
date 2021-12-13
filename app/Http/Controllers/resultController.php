@@ -180,7 +180,33 @@ class resultController extends Controller
         return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
       }
       else{
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+        $test = Rms_result::where('student_id', $request->id)
+        ->where('subject_id', Session::get('subjectid'))
+        ->where('sequence_id',  4)
+        ->get();
+        if($test->first())
+        {
+          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
+        }
+        elseif(!$test->first()){
+        $result = new Rms_result;
+        $result->student_id = $request->id;
+        $result->class_id = $request->class_id;
+        $result->sequence_id = 4;
+        $result->subject_id = Session::get('subjectid');
+        $result->mark4 = $request->mark;
+        $result->academic_year = (now()->year);
+        $result->teacher_id = Session::get('userid');
+            if($result->save())
+            {
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h2>Results Saved</h2> </div>';
+            }
+            else{
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Something Went Wrong Please try again </div>';
+
+            }
+          }
+    }
       }
 
 
@@ -196,7 +222,33 @@ class resultController extends Controller
         return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
       }
       else{
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+        $test = Rms_result::where('student_id', $request->id)
+        ->where('subject_id', Session::get('subjectid'))
+        ->where('sequence_id',  5)
+        ->get();
+        if($test->first())
+        {
+          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
+        }
+        elseif(!$test->first()){
+        $result = new Rms_result;
+        $result->student_id = $request->id;
+        $result->class_id = $request->class_id;
+        $result->sequence_id = 5;
+        $result->subject_id = Session::get('subjectid');
+        $result->mark5 = $request->mark;
+        $result->academic_year = (now()->year);
+        $result->teacher_id = Session::get('userid');
+            if($result->save())
+            {
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h2>Results Saved</h2> </div>';
+            }
+            else{
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Something Went Wrong Please try again </div>';
+
+            }
+          }
+    }
       }
 
     }
@@ -211,7 +263,33 @@ class resultController extends Controller
         return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
       }
       else{
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
+        $test = Rms_result::where('student_id', $request->id)
+        ->where('subject_id', Session::get('subjectid'))
+        ->where('sequence_id',  6)
+        ->get();
+        if($test->first())
+        {
+          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
+        }
+        elseif(!$test->first()){
+        $result = new Rms_result;
+        $result->student_id = $request->id;
+        $result->class_id = $request->class_id;
+        $result->sequence_id = 6;
+        $result->subject_id = Session::get('subjectid');
+        $result->mark6 = $request->mark;
+        $result->academic_year = (now()->year);
+        $result->teacher_id = Session::get('userid');
+            if($result->save())
+            {
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h2>Results Saved</h2> </div>';
+            }
+            else{
+              return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Something Went Wrong Please try again </div>';
+
+            }
+          }
+    }
       }
 
 
