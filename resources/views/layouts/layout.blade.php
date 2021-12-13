@@ -38,9 +38,9 @@
           </a>
         </li> -->
         <li>
-          <a href="/subjects">
+          <a href="/teacher">
             <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-            <span class="links_name">View Subject</span>
+            <span class="links_name">Insert Marks</span>
           </a>
         </li>
         <li>
@@ -56,16 +56,10 @@
           </a>
         </li>
         <li>
-          <a href="/teacher">
-            <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-            <span class="links_name">Insert Marks</span>
-          </a>
-        </li>
-        <li>
           <a href="/student">
             <i><span class="iconify" data-icon="noto:man-student-medium-dark-skin-tone" data-rotate="180deg" data-flip="vertical"></span></i>
             </i>
-            <span class="links_name">Students</span>
+            <span class="links_name">View Students</span>
           </a>
 
         </li>
@@ -81,13 +75,13 @@
           <a href="/view/classes">
             <i><span class="iconify" data-icon="mdi:google-classroom" style="color: white;" data-rotate="180deg"></span>
               </i>
-            <span class="links_name">Classes</span>
+            <span class="links_name">View Classes</span>
           </a>
         </li>
         <li>
           <a href="/subjects">
             <i><span class="iconify" data-icon="ic:sharp-subject" style="color: white;" data-rotate="180deg"></span></i>
-            <span class="links_name">Subjects</span>
+            <span class="links_name">View Subjects</span>
           </a>
         </li>
         <li>
@@ -158,14 +152,14 @@
           <li>
             <a href="/teacher">
               <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-              <span class="links_name">Teachers</span>
+              <span class="links_name">View Teachers</span>
             </a>
           </li>
           <li>
             <a href="/student">
               <i><span class="iconify" data-icon="noto:man-student-medium-dark-skin-tone" data-rotate="180deg" data-flip="vertical"></span></i>
               </i>
-              <span class="links_name">Students</span>
+              <span class="links_name">View Students</span>
             </a>
 
           </li>
@@ -174,13 +168,13 @@
             <a href="/view/classes">
               <i><span class="iconify" data-icon="mdi:google-classroom" style="color: white;" data-rotate="180deg"></span>
                 </i>
-              <span class="links_name">Classes</span>
+              <span class="links_name">View Classes</span>
             </a>
           </li>
           <li>
             <a href="/subjects">
               <i><span class="iconify" data-icon="ic:sharp-subject" style="color: white;" data-rotate="180deg"></span></i>
-              <span class="links_name">Subjects</span>
+              <span class="links_name">View Subjects</span>
             </a>
           </li>
           <li>
