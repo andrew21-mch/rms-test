@@ -124,10 +124,7 @@
             <?php $tmarks = 0?>
         @foreach($data1 as $data)
           <tr>
-            <?php $coef = $data->coefficient+$coef
-            if($data->mark1 == NULL){
-
-            }?>
+            <?php $coef = $data->coefficient+$coef ?>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
             <td>{{$data->mark1}}</td>
@@ -136,11 +133,11 @@
               $data->mark1 == $data->mark2;
             }
             elseif($data->mark2 == NULL){
-              $data->mark2 = $data->mark1
+              $data->mark2 = $data->mark1;
             }
             else{
               $data->mark1 == $data->mark1;
-              $data->mark2 == $data->mark2
+              $data->mark2 == $data->mark2;
             }
             ?>
             <td>{{($data->mark1 + $data->mark2)/2}}</td>
