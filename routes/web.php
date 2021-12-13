@@ -47,6 +47,7 @@ Route::view('viewStudent','viewStudent');
 Route::view('/', 'auth.login');
 Route::view('/register', 'auth.register');
 Route::view('/adminRegisterTeacher', 'auth.admin_register');
+Route::view('/adminRegisterSubject', 'addsubject');
 Route::view('/allresult', 'marks.allresult');
 Route::view('/search_tips', 'search_tips');
 Route::view('/contact_us','contact');

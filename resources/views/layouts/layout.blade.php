@@ -50,6 +50,12 @@
           </a>
         </li>
         <li>
+          <a href="/adminRegisterSubject">
+            <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
+            <span class="links_name">Add Subjects</span>
+          </a>
+        </li>
+        <li>
           <a href="/teacher">
             <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
             <span class="links_name">Insert Marks</span>

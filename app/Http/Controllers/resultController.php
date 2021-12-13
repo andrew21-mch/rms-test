@@ -206,7 +206,6 @@ class resultController extends Controller
 
             }
           }
-    }
       }
 
 
@@ -248,7 +247,6 @@ class resultController extends Controller
 
             }
           }
-    }
       }
 
     }
@@ -289,7 +287,6 @@ class resultController extends Controller
 
             }
           }
-    }
       }
 
 
