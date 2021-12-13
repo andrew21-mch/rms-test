@@ -44,8 +44,16 @@ class studentController extends Controller
     return view('viewstudent',['data'=>$data]);
   }
 
-  public function deleteStudents(){
-    return "Delete Student Controller";
+  public function deleteStudents($id){
+    $data_to_delete = Rms_student::find($id);
+    $first_name = $data_to_delete['first_name'];
+    if($data_to_delete->delete()){
+
+      return redirect('delete_success');
+    }
+    else{
+      return redirect('delete_error');
+    }
   }
 
   public function editStudents(){

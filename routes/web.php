@@ -37,6 +37,8 @@ Route::view('/form5', 'class.form5');
 Route::view('/lowersixth', 'class.lowersixth');
 Route::view('/uppersixth', 'class.uppersixth');
 Route::view('/test', 'test');
+Route::view('/delete_success', 'errors_success.delete_student_success');
+Route::view('/delete_error', 'errors_success.delete_student_error');
 
 
 
