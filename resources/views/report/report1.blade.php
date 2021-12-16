@@ -133,7 +133,7 @@
               $data->mark1 == $data->mark2;
             }
             elseif($data->mark2 == NULL){
-              $data->mark2 = $data->mark1;
+              $data->mark2 == $data->mark1;
             }
             else{
               $data->mark1 = $data->mark1;
