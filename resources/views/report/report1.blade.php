@@ -160,7 +160,7 @@
           <tr>
             <td colspan="2"> Student Average </td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{$tmarks/$coef}}"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{round($tmarks/$coef, 2)}}"></td>
           </tr>
 
           <tr>
