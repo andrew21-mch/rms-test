@@ -136,8 +136,8 @@
               $data->mark2 = $data->mark1;
             }
             else{
-              $data->mark1 == $data->mark1;
-              $data->mark2 == $data->mark2;
+              $data->mark1 = $data->mark1;
+              $data->mark2 = $data->mark2;
             }
             ?>
             <td>{{($data->mark1 + $data->mark2)/2}}</td>
