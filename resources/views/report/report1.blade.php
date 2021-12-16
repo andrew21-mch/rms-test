@@ -112,7 +112,7 @@
             <th scope="col" class="col-md-1">EVAL2</th>
             <th scope="col" class="col-md-1">Final</th>
             <th scope="col" class="col-md-1">Total</th>
-            <th scope="col"class="col-md-1">Rank</th>
+            <th scope="col"class="col-md-1">Teacher</th>
             <th scope="col" class="col-md-1">Remark</th>
 
 
@@ -221,7 +221,7 @@
             <td>
               <div class="col-sm-4">
                 <hr>
-                Parent/Tutor
+                Class/Tutor
               </div>
             </td>
             <td>
