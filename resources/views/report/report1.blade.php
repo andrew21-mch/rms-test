@@ -70,7 +70,7 @@
       </center>
       <br>
       <div class="container col-md-12" style="outline:solid #ddd;">
-        <table border='1px' class="table table-bordered">
+        <center><table border='1px' class="table table-bordered">
           <tr>
             <td>Name: </td>
             <td><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
@@ -87,8 +87,8 @@
             <td>School Year: </td>
             <td>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
           </tr>
-        </table>
-        <center>
+        </table>        </center>
+    <center>
       <table class="table table-bordered" border="2px">
         <thead>
           <tr style="background-color:#DCDCDC">
@@ -138,6 +138,7 @@
           </tr>
         @endforeach
       </table></center>
+      <center>
       <table border="2px" bordercolor = "black" class="table table-bordered">
       <tr>
         <td >
@@ -175,6 +176,7 @@
 
           </tr>
           </table>
+        </center>
       </td>
 
       <td>
