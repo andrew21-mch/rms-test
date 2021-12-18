@@ -38,7 +38,7 @@
 
         </script>
      </head>
-  <body id="print" class="body">
+  <body id="print" class="body" >
     <div class="container" style="font-size:10px" >
       @if(count($data1))
       <div class="container" style="font-size:12px">
@@ -46,30 +46,17 @@
           <div class="row col-md-10">
             <table class="table">
               <tr>
-                <td colspan="5">
-                    <center>REPUBLIC DU CAMEROUN <br>
-                    Paix-Travail-Partrie <br>
-                    MINISTRE TO ENSEIGMENT SECONDAIRE <br>
-                    DELEGATION REGIONAL DU NORHT WEST  <br>
-                    SAINT FRANCISCA MULTILINGUAL <br>
-                    EDUCATIONAL COMPLEX</center>
+                <td colspan="4">
+                    <center><span data-width="120" data-height="90"><img src="../images/test.png" alt="" style="width: 140px; height:90px"></span></center>
                   </div></td>
+                  <td colspan="2"></td>
 
-                  <td colspan="2">
-
-                      <span class="iconify" data-icon="icons8:student" data-width="100" data-height="100"></span>
-
+                <td colspan="6">
+                    <center><h4>SAINT FRANCISCA MULTILINGUAL
+                    EDUCATIONAL COMPLEX (ST. FrMEC)  SECONDARY, COMMERCIAL AND TECHNICAL SCHOOL<br></h4> <br>
+                   <b>Motto:<q>Knowledge, Success and Excellence</q></b> <br><br>
+                    Mile 5 Nkwen-Bamenda </center>
                 </td>
-
-                <td colspan="5">
-
-                    <center>REPUBLIC DU CAMEROUN <br>
-                    Paix-Travail-Partrie <br>
-                    MINISTRE TO ENSEIGMENT SECONDAIRE <br>
-                    DELEGATION REGIONAL DU NORHT WEST  <br>
-                    SAINT FRANCISCA MULTILINGUAL <br>
-                    EDUCATIONAL COMPLEX</center>
-                  </td>
 
               </div>
               </tr>
@@ -81,8 +68,7 @@
 
       </center>
       <br>
-
-      <div class="container col-md-12" style="outline:solid #ddd">
+      <div class="container col-md-12" style="outline:solid #ddd;">
         <table border='1px' class="table table-bordered">
           <tr>
             <td>Name: </td>
@@ -98,7 +84,7 @@
             <td>Term: </td>
             <td>First Term</td>
             <td>School Year: </td>
-            <td>2020/2021</td>
+            <td>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
           </tr>
         </table>
         <br><br>
@@ -132,13 +118,10 @@
             <?php if($data->mark1 == NULL){
               $data->mark1 = $data->mark2;
             }
-            if($data->mark2 == NULL){
+            if($data->mark2 == NULL && $data->mark2 !== 0){
               $data->mark2 = $data->mark1;
             }
-            else{
-              $data->mark1 = $data->mark1;
-              $data->mark2 = $data->mark2;
-            }
+
             ?>
             <td>{{($data->mark1 + $data->mark2)/2}}</td>
             <td>{{(($data->mark1 + $data->mark2)/2)*$data->coefficient}}</td>
@@ -146,7 +129,7 @@
             @if((((($data->mark1 + $data->mark2)/2)*$data->coefficient) > 20*$data->coefficient/2 ))
             <td>Passed</td>
             @else
-            <td>Failed</td>
+            <td style="color:red">Failed</td>
             @endif
 
             <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient ?>
@@ -181,7 +164,7 @@
             @elseif($tmarks/$coef < 16 && $tmarks/$coef > 9.99)
             <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Good"></td>
             @else
-            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px;" value="Failed"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:120px; margin:1px 2px 1px 4px; color:red" value="Failed"></td>
           @endif
 
           </tr>

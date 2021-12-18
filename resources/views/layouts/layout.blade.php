@@ -152,7 +152,7 @@
           <li>
             <a href="/teacher">
               <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-              <span class="links_name">View Teachers</span>
+              <span class="links_name">Insert Marks</span>
             </a>
           </li>
           <li>
@@ -242,7 +242,7 @@
             <li>
               <a href="/teacher">
                 <i ><span class="iconify" data-icon="fa-solid:chalkboard-teacher" style="color: white;"></span></i>
-                <span class="links_name">Teachers</span>
+                <span class="links_name">My Subject</span>
               </a>
             </li>
             <li>
