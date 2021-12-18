@@ -44,6 +44,7 @@
       <div class="container" style="font-size:12px">
         <center>
           <div class="row col-md-10">
+            <table>
             <table class="table">
               <tr>
                 <td colspan="4">
@@ -127,7 +128,7 @@
             <td>{{(($data->mark1 + $data->mark2)/2)*$data->coefficient}}</td>
             <td>{{$data->teacher_last_name}}</td>
             @if((((($data->mark1 + $data->mark2)/2)*$data->coefficient) > 20*$data->coefficient/2 ))
-            <<?php $passed+=1 ?>
+            <?php $passed+=1 ?>
             <td>Passed</td>
             @else
             <td style="color:red">Failed</td>
@@ -198,7 +199,7 @@
           </tr>
           </table> </td>
       </table>
-
+      <center>
       <table border="1px" bordercolor = "black" class="table table-bordered">
       <tr>
           <td>  <div class="col-sm-4">
@@ -220,6 +221,7 @@
             </td>
         </tr>
     </table>
+  </center>
   </div>
 </div>
       <span style="float:left" ><i class="fa fa-print fa-2x" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
