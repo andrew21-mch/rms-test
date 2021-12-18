@@ -87,7 +87,6 @@
             <td>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
           </tr>
         </table>
-        <br><br>
         <center>
       <table class="table table-bordered" border="2px">
         <thead>
