@@ -108,6 +108,7 @@
         <tbody>
             <?php $coef = 0 ?>
             <?php $tmarks = 0?>
+            <?php $passed = 0?>
         @foreach($data1 as $data)
           <tr>
             <?php $coef = $data->coefficient+$coef ?>
@@ -127,6 +128,7 @@
             <td>{{(($data->mark1 + $data->mark2)/2)*$data->coefficient}}</td>
             <td>{{$data->teacher_last_name}}</td>
             @if((((($data->mark1 + $data->mark2)/2)*$data->coefficient) > 20*$data->coefficient/2 ))
+            <<?php $passed+=1 ?>
             <td>Passed</td>
             @else
             <td style="color:red">Failed</td>
@@ -144,6 +146,10 @@
             <td colspan="2"> Student Average </td>
 
             <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{round($tmarks/$coef, 2)}}"></td>
+          </tr>
+          <tr>
+            <td colspan="2"> Subjects Passed </td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{$passed}}"></td>
           </tr>
 
           <tr>
