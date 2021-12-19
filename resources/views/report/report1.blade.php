@@ -74,21 +74,21 @@
         <center>
           <table border='1px' class="table table-bordered" style="width:900px">
             <thead>
-              <tr style="background-color:#e25822">
-                <th scope="col" class="col-md-2">Name:</th>
-                <th scope="col" class="col-md-3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></th>
-                <th scope="col" class="col-md-1">Gender:</th>
-                <th scope="col" class="col-md-1"><b>{{$data1[0]->gender}}</b></th>
-                <th scope="col" class="col-md-1">Date of Birth:</th>
-                <th scope="col" class="col-md-1"><b>{{$data1[0]->date_of_birth}}</b></th>
+              <tr style="background-color:#e25822;height:45px;">
+                <th scope="col" class="col-md-1"><h5>Name:</h5></th>
+                <th scope="col" class="col-md-3"><h5><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></h5></th>
+                <th scope="col" class="col-md-1"><h5>Gender:</h5></th>
+                <th scope="col" class="col-md-1"><h5><b>{{$data1[0]->gender}}</b></h5></th>
+                <th scope="col" class="col-md-2"><h5>Date of Birth:</h5></th>
+                <th scope="col" class="col-md-1"><h5><b>{{$data1[0]->date_of_birth}}</b></h5></th>
               </tr>
-              <tr style="background-color:#e25822">
-                <th scope="col" class="col-md-2">Class:</th>
-                <th scope="col" class="col-md-3"><b>{{$data1[0]->class_name}}</b></th>
-                <th scope="col" class="col-md-1">Term:</th>
-                <th scope="col" class="col-md-1"><b>First Term</b></th>
-                <th scope="col" class="col-md-1">School Year: </th>
-                <th scope="col" class="col-md-1"><b>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</b></th>
+              <tr style="background-color:#e25822; height:45px">
+                <th scope="col" class="col-md-1"><h5>Class:</h5></th>
+                <th scope="col" class="col-md-3"><h5><b>{{$data1[0]->class_name}}</h5></b></th>
+                <th scope="col" class="col-md-1"><h5>Term:</h5></th>
+                <th scope="col" class="col-md-1"><h5><b>First Term</b></h5></th>
+                <th scope="col" class="col-md-2"><h5>School Year: </h5></th>
+                <th scope="col" class="col-md-1"><h5><b>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</b></h5></th>
               </tr>
             </thead>
         </table>
