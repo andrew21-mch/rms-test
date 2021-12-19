@@ -141,10 +141,11 @@
             <td>Passed</td>
             @else
             <td style="color:red">Failed</td>
+            <?php $countp+=1 ?>
             @endif
 
             <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient;
-            $countp+=1 ?>
+?>
           </tr>
         @endforeach
       </table>
