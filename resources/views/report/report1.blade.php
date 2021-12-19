@@ -71,22 +71,25 @@
       <!-- <div class="container col-md-12" style="outline:solid #ddd;"> -->
         <center>
           <table border='1px' class="table table-bordered">
-          <tr>
-            <td colspan="1">Name: </td>
-            <td colspan="3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
-            <td colspan="1">Gender: </td>
-            <td colspan="2"><b>{{$data1[0]->gender}}</b></td>
-            <td colspan="2">Date of Birth: </td>
-            <td colspan="2"><b>{{$data1[0]->date_of_birth}}</b></td>
-          </tr>
-          <tr>
-            <td  colspan="1">Class: </td>
-            <td colspan="3">{{$data1[0]->class_name}}</td>
-            <td colspan="1">Term: </td>
-            <td colspan="2">First Term</td>
-            <td colspan="2">School Year: </td>
-            <td colspan="2">{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
-          </tr>
+            <tbody>
+              <tr>
+                <td colspan="1">Name: </td>
+                <td colspan="3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
+                <td colspan="1">Gender: </td>
+                <td colspan="2"><b>{{$data1[0]->gender}}</b></td>
+                <td colspan="2">Date of Birth: </td>
+                <td colspan="2"><b>{{$data1[0]->date_of_birth}}</b></td>
+              </tr>
+              <tr>
+                <td  colspan="1">Class: </td>
+                <td colspan="3">{{$data1[0]->class_name}}</td>
+                <td colspan="1">Term: </td>
+                <td colspan="2">First Term</td>
+                <td colspan="2">School Year: </td>
+                <td colspan="2">{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
+              </tr>
+
+            </tbody>
         </table>
       </center>
     <center>
