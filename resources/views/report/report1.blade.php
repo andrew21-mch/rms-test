@@ -88,9 +88,10 @@
             <td>School Year: </td>
             <td>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
           </tr>
-        </table>        </center>
+        </table>
+      </center>
     <center>
-      <table class="table table-bordered" border="2px">
+      <table class="table table-bordered" border="1px">
         <thead>
           <tr style="background-color:#DCDCDC">
             <th scope="col" class="col-md-2">Subject</th>
