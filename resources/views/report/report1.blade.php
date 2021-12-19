@@ -93,8 +93,11 @@
             </thead>
         </table>
       </center>
-    <center>
-      <table class="table table-bordered" border="1px" style="width:900px">
+    <center style="
+    background-image:url('{{ asset('/images/water.jpg')}}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+      <table class="table table-bordered" border="1px" style="width:900px;>
         <thead>
           <tr style="background-color:#DCDCDC">
             <th scope="col" class="col-md-2">Subject</th>
