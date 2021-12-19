@@ -70,7 +70,7 @@
       <br>
       <!-- <div class="container col-md-12" style="outline:solid #ddd;"> -->
         <center>
-          <table border='1px' class="table table-bordered">
+          <table border='1px' class="table table-bordered" style="width:900px">
             <thead>
               <tr style="background-color:#e25822">
                 <th scope="col" class="col-md-2">Name:</th>
@@ -92,7 +92,7 @@
         </table>
       </center>
     <center>
-      <table class="table table-bordered" border="1px">
+      <table class="table table-bordered" border="1px" style="width:900px">
         <thead>
           <tr style="background-color:#DCDCDC">
             <th scope="col" class="col-md-2">Subject</th>
@@ -143,7 +143,7 @@
       </table>
     </center>
       <center>
-      <table border="2px" class="table table-striped">
+      <table border="2px" class="table table-striped" style="width:900px">
       <tr>
         <td colspan="7">
           <table>
@@ -208,7 +208,7 @@
       </tr>
       </table>
 
-      <table border="1px"  class="table">
+      <table border="1px"  class="table" style="width:900px">
         <tr>
             <td>
                 <hr>
