@@ -37,6 +37,8 @@
           }
 
         </script>
+        <style media="screen">
+        </style>
      </head>
   <body id="print" class="body" >
     <div class="container" style="font-size:10px" >
@@ -113,7 +115,7 @@
             <?php $tmarks = 0?>
             <?php $passed = 0?>
         @foreach($data1 as $data)
-          <tr>
+          <tr style="height:30px">
             <?php $coef = $data->coefficient+$coef ?>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
