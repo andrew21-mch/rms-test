@@ -72,7 +72,7 @@
         <center>
           <table border='1px' class="table table-bordered">
             <thead>
-              <tr style="background-color:#DCDCDC">
+              <tr style="background-color:#e25822">
                 <th scope="col" class="col-md-2">Name:</th>
                 <th scope="col" class="col-md-3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></th>
                 <th scope="col" class="col-md-1">Gender:</th>
@@ -80,7 +80,7 @@
                 <th scope="col" class="col-md-1">Date of Birth:</th>
                 <th scope="col" class="col-md-1"><b>{{$data1[0]->date_of_birth}}</b></th>
               </tr>
-              <tr style="background-color:#DCDCDC">
+              <tr style="background-color:#e25822">
                 <th scope="col" class="col-md-2">Class:</th>
                 <th scope="col" class="col-md-3"><b>{{$data1[0]->class_name}}</b></th>
                 <th scope="col" class="col-md-1">Term:</th>
@@ -238,7 +238,6 @@
         <div class="alert alert-primary mt-4" role="alert" style="text-align:center">
           <h1>No Results Available Yet!</h1>
         </div>
-      </div>
       </div>
       @endif
     </div>
