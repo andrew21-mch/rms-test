@@ -156,9 +156,6 @@ a#box:hover{
   color:white;
   background-color: green;
 }
-table{
-   width:100%;
-}
 @media print {
   .container {
     -webkit-print-color-adjust: exact;
