@@ -69,8 +69,9 @@
 
       </center>
       <br>
-      <div class="container col-md-12" style="outline:solid #ddd;">
-        <center><table border='1px' class="table table-bordered">
+      <!-- <div class="container col-md-12" style="outline:solid #ddd;"> -->
+        <center>
+          <table border='1px' class="table table-bordered">
           <tr>
             <td>Name: </td>
             <td><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
@@ -139,7 +140,7 @@
         @endforeach
       </table></center>
       <center>
-      <table border="2px" bordercolor = "black" class="table table-bordered">
+      <table border="2px" class="table table-striped">
       <tr>
         <td >
           <table>
