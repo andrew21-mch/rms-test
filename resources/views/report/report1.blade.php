@@ -71,25 +71,24 @@
       <!-- <div class="container col-md-12" style="outline:solid #ddd;"> -->
         <center>
           <table border='1px' class="table table-bordered">
-            <tbody>
-              <tr>
-                <td colspan="1">Name: </td>
-                <td colspan="3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
-                <td colspan="1">Gender: </td>
-                <td colspan="2"><b>{{$data1[0]->gender}}</b></td>
-                <td colspan="2">Date of Birth: </td>
-                <td colspan="2"><b>{{$data1[0]->date_of_birth}}</b></td>
+            <thead>
+              <tr style="background-color:#DCDCDC">
+                <th scope="col" class="col-md-2">Name:</th>
+                <th scope="col" class="col-md-3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></th>
+                <th scope="col" class="col-md-1">Gender:</th>
+                <th scope="col" class="col-md-1"><b>{{$data1[0]->gender}}</b></th>
+                <th scope="col" class="col-md-1">Date of Birth:</th>
+                <th scope="col" class="col-md-1"><b>{{$data1[0]->date_of_birth}}</b></th>
               </tr>
-              <tr>
-                <td  colspan="1">Class: </td>
-                <td colspan="3">{{$data1[0]->class_name}}</td>
-                <td colspan="1">Term: </td>
-                <td colspan="2">First Term</td>
-                <td colspan="2">School Year: </td>
-                <td colspan="2">{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
+              <tr style="background-color:#DCDCDC">
+                <th scope="col" class="col-md-2">Class:</th>
+                <th scope="col" class="col-md-3"><b>{{$data1[0]->class_name}}</b></th>
+                <th scope="col" class="col-md-1">Term:</th>
+                <th scope="col" class="col-md-1"><b>First Term</b></th>
+                <th scope="col" class="col-md-1">School Year: </th>
+                <th scope="col" class="col-md-1"><b>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</b></th>
               </tr>
-
-            </tbody>
+            </thead>
         </table>
       </center>
     <center>
