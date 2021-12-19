@@ -44,7 +44,6 @@
       <div class="container" style="font-size:12px">
         <center>
           <div class="row col-md-10">
-            <table>
             <table class="table">
               <tr>
                 <td colspan="4">
@@ -73,20 +72,20 @@
         <center>
           <table border='1px' class="table table-bordered">
           <tr>
-            <td>Name: </td>
-            <td><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
-            <td>Gender: </td>
-            <td><b>{{$data1[0]->gender}}</b></td>
-            <td>Date of Birth: </td>
-            <td><b>{{$data1[0]->date_of_birth}}</b></td>
+            <td colspan="1">Name: </td>
+            <td colspan="3"><b>{{$data1[0]->first_name}} {{$data1[0]->last_name}}</b></td>
+            <td colspan="1">Gender: </td>
+            <td colspan="2"><b>{{$data1[0]->gender}}</b></td>
+            <td colspan="2">Date of Birth: </td>
+            <td colspan="2"><b>{{$data1[0]->date_of_birth}}</b></td>
           </tr>
           <tr>
-            <td>Class: </td>
-            <td>{{$data1[0]->class_name}}</td>
-            <td>Term: </td>
-            <td>First Term</td>
-            <td>School Year: </td>
-            <td>{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
+            <td  colspan="1">Class: </td>
+            <td colspan="3">{{$data1[0]->class_name}}</td>
+            <td colspan="1">Term: </td>
+            <td colspan="2">First Term</td>
+            <td colspan="2">School Year: </td>
+            <td colspan="2">{{$data1[0]->academic_year}}/{{$data1[0]->academic_year + 1}}</td>
           </tr>
         </table>
       </center>
@@ -139,11 +138,12 @@
             <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient ?>
           </tr>
         @endforeach
-      </table></center>
+      </table>
+    </center>
       <center>
       <table border="2px" class="table table-striped">
       <tr>
-        <td >
+        <td colspan="7">
           <table>
           <tr>
             <td colspan="2"> Student Average </td>
@@ -181,7 +181,7 @@
         </center>
       </td>
 
-      <td>
+      <td colspan="5">
           <table class="col-md-10">
           <tr>
             <td colspan="2">HONOR ROLE</td>
@@ -201,30 +201,32 @@
             <td colspan="2">DISCIPLINE WARNIN</td>
             <td><input type="checkbox" style="margin: 1px 1px 1px 1px"; ></td>
           </tr>
-          </table> </td>
+          </table>
+        </td>
+      </tr>
       </table>
-      <center>
-      <table border="1px" bordercolor = "black" class="table table-bordered">
-      <tr>
-          <td>  <div class="col-sm-4">
-              <hr>
-              Class Master
-            </div></td>
 
+      <table border="1px"  class="table">
+        <tr>
             <td>
-              <div class="col-sm-4">
                 <hr>
-                Class/Tutor
-              </div>
-            </td>
-            <td>
-              <div class="col-sm-4">
-                <hr>
-                Principal
-              </div>
-            </td>
-        </tr>
-    </table>
+                Class Master
+              </div></td>
+
+              <td>
+
+                  <hr>
+                  Class/Tutor
+                </div>
+              </td>
+              <td>
+                <div >
+                  <hr>
+                  Principal
+                </div>
+              </td>
+          </tr>
+        </table>
   </center>
   </div>
 </div>
@@ -238,7 +240,7 @@
       </div>
       @endif
     </div>
-      </body>
+</body>
 
       <!-- Loading Scripts -->
 
