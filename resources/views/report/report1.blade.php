@@ -97,7 +97,7 @@
     background-image:url('{{ asset('/images/water.jpg')}}');
     background-repeat: no-repeat;
     background-size: cover;">
-      <table class="table table-bordered" border="1px" style="width:900px;>
+      <table class="table table-bordered" border="1px" style="width:900px;">
         <thead>
           <tr style="background-color:#DCDCDC">
             <th scope="col" class="col-md-2">Subject</th>
@@ -116,7 +116,8 @@
         <tbody>
             <?php $coef = 0 ?>
             <?php $tmarks = 0?>
-            <?php $passed = 0?>
+            <?php $passed = 0;
+            $countp = 0?>
         @foreach($data1 as $data)
           <tr style="height:30px">
             <?php $coef = $data->coefficient+$coef ?>
@@ -142,7 +143,8 @@
             <td style="color:red">Failed</td>
             @endif
 
-            <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient ?>
+            <?php $tmarks = $tmarks + (($data->mark1 + $data->mark2)/2)*$data->coefficient;
+            $countp+=1 ?>
           </tr>
         @endforeach
       </table>
@@ -160,6 +162,10 @@
           <tr>
             <td colspan="2"> Subjects Passed </td>
             <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{$passed}}"></td>
+          </tr>
+          <tr>
+            <td colspan="2"> Subjects Failed </td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{$countp}}"></td>
           </tr>
 
           <tr>
