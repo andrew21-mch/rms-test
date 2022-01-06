@@ -119,7 +119,7 @@
             <?php $passed = 0;
             $countp = 0?>
         @foreach($data1 as $data)
-          <tr style="height:30px">
+          <tr style="height:30px; text-align:left">
             <?php $coef = $data->coefficient+$coef ?>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
