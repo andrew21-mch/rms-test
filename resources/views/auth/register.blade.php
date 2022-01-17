@@ -1,11 +1,12 @@
 @extends('layouts.app')
 @section('content')
-        <div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px; height:80%">
+        <div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px; height:80%;">
             <div class="row justify-content-center">
                 <div class="col-md-9">
                     <div class="card">
-                      <center><h2 class="card-header ab-b-r" style="padding:2%">Register</h2></center>
-
+                      <center>
+                          <h2 class="card-header" style="padding:2%">Register</h2>
+                        </center>
                       <div class="card-body">
                         <form action="/create_account" method="post">
                           @csrf
