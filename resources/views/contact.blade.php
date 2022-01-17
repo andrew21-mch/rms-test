@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 <!-- Wrapper container -->
-<div class="container py-4">
+<div class="container py-4" style="width:85%">
   <!-- Bootstrap 5 starter form -->
   <form id="contactForm" action="/contactMe" method="get">
     <div class="row">
-      <div class="col-md-3 align-content-center" style="text-align:center; margin-top:3%">
+      <div class="col-md-3 align-content-center" style="text-align:center; margin-top:1%">
         <img src="../images/contactt.png" alt="Image" alt="image" style="width:100%; border-radius:50%">
       </div>
       <div class="col-md-8">
