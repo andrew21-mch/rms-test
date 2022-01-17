@@ -244,7 +244,7 @@
   </center>
   </div>
 </div>
-      <span style="float:left" ><i class="fa fa-print fa-2x" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
+      <span style="float:left; margin-left:20%" ><i class="fa fa-print fa-2x" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
         @else
       <div class="row justify-content-center col-md-12">
         <div class="alert alert-primary mt-4" role="alert" style="text-align:center">
