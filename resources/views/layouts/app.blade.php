@@ -26,9 +26,15 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     St FrMEC
                 </a>
-                
+                <div id="navbarSupportedContent"> 
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="#">Login</a></span>
+                </div>
+                   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
             </div>
         </nav>

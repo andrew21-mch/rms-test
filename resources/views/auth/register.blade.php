@@ -141,7 +141,7 @@
 
                               <div class="form-group row justify-content-center mb-0">
                                   <div class="col-md-6 offset-md-4 " style="margin-top:15px">
-                                      <button type="submit" class="btn btn-primary">
+                                      <button type="submit" class="btn btn-primary" style="float:right">
                                           {{ __('Register') }}
                                       </button>
                                   </div>
