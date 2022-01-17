@@ -5,8 +5,8 @@
   <!-- Bootstrap 5 starter form -->
   <form id="contactForm" action="/contactMe" method="get">
     <div class="row">
-      <div class="col-md-3">
-        <img src="{{ URL::to('/images/contactt.png') }}" alt="image">
+      <div class="col-md-3 align-content-center" style="text-align:center; margin-top:3%">
+        <img src="{{ URL::asset('images/contactt.png') }}" alt="image">
       </div>
       <div class="col-md-8">
         <!-- Name input -->
