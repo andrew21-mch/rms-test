@@ -1,53 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style media="screen">
-    body{
-      height: 100%;
-      }
-      .container{
-        margin-top: 3%;
-      }
-      .form-group{
-        width: 100%;
-        height: 30%;
-      }
-      .col-md-10{
-      width: 100%;
-      }
-      .card-body{
-        width: 100%;
-        height: 60%; }
-      .row{
-        width: 98%;
-      }
-    </style>
-  </head>
-  <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
-        <nav class="nav justify-content-end  navbar-light bg-light">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="/register" >Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="login" data-toggle="login" href="/" role="tab" >Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+@extends('layouts.app')
+@section('content')
         <div class="container" style="padding-top:40px;padding-bottom:20px;padding-right:20px;padding-left:40px; height:80%">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="card">
-                      <div class="card-header"><center><h1>Teacher Registration Form</h1></center></div>
+                      <center><h2 class="card-header ab-b-r" style="padding:2%">Register</h2></center>
 
                       <div class="card-body">
                         <form action="/create_account" method="post">
@@ -76,7 +33,7 @@
                               </div>
                               <div class="form-group row justify-content-center">
 
-                                  <div class="col-md-10">
+                                  <div class="col-md-12">
                                     <label for="email">Email</label>
                                       <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -88,7 +45,7 @@
                                   </div>
                               </div>
                               <div class="form-group row justify-content-center">
-                                  <div class="col-md-10">
+                                  <div class="col-md-12">
                                     <label for="phone" >{{ __('Phone Number') }}</label>
                                       <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
 
@@ -101,7 +58,7 @@
                               </div>
 
                               <div class="form-group row justify-content-center">
-                                  <div class="col-md-3">
+                                  <div class="col-md-6">
                                     <label for="subject" >{{ __('Subject') }}</label>
                                     <select class="form-control" name="subject">
                                       <option value="">Select Subject</option>
@@ -116,7 +73,7 @@
                                       @enderror
 
                                   </div>
-                                  <div class="col-md-3">
+                                  <div class="col-md-6">
                                     <label for="subject" >{{ __('Subject') }}</label>
                                     <select class="form-control" name="subject">
                                       <option value="">Select Role</option>
@@ -129,7 +86,10 @@
                                       @enderror
 
                                   </div>
-                                  <div class="col-md-3">
+                              </div>
+
+                              <div class="form-group row justify-content-center">
+                                  <div class="col-md-6">
                                     <label for="password-confirm" >{{ __('Option') }}</label>
                                     <select class="form-control" name="option">
                                       <option value="">Select Option</option>
@@ -143,7 +103,7 @@
                                       </span>
                                   @enderror
                                   </div>
-                                  <div class="col-md-3">
+                                  <div class="col-md-6">
                                     <label for="verify" >{{ __('Verification') }}</label>
                                     <input id="verify" type="text" class="form-control @error('verify') is-invalid @enderror" name="verify" value="{{ old('verify') }}" required autocomplete="verify">
                                     @error('verify')
@@ -153,6 +113,7 @@
                                   @enderror
                                   </div>
                               </div>
+
 
 
 
@@ -192,5 +153,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+@endsection()

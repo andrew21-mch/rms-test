@@ -1,55 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="{{URL::asset('css/report.css')}}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style media="screen">
-        body{
-          height: 100%;
-          }
-          .container{
-            margin-top: 3%;
-          }
-          .form-group{
-            width: 100%;
-            height: 30%;
-          }
-          .col-md-8{
-          width: 100%;
-          }
-          .card-body{
-            width: 100%;
-            height: 60%; }
-          .row{
-            width: 98%;
-          }
-    </style>
-  </head>
-  <body style="background-image: url('images/cast.jpeg'); background-repeat:no-repeat; background-size: cover; background-position:fixed">
-        <nav class="nav justify-content-end  navbar-light bg-light">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="/register" >Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="login" data-toggle="login" href="/" role="tab" >Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="/contact_us">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
+@extends('layouts.app')
+@section('content')
 <div class="container" style="padding-top:60px;padding-bottom:30px;padding-right:20px;padding-left:40px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header btn btn-info" style="color:white; background-color:#440be0"><center><h2>Login</h2></center></div>
 
                 <div class="card-body">
                     <form method="POST" action="userlogin">
@@ -83,7 +38,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-8 offset-md-3">
+                            <div class="col-md-8 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                     <label class="form-check-label" for="remember">
@@ -94,16 +49,10 @@
                         </div>
 
                         <div class="form-group row mb-2">
-                            <div class="col-md-6 offset-md-3">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 offset-md-9">
+                                <button type="submit" class="btn btn-primary justify-content-center" style="width:100px">
                                     {{ __('Login') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     </form>
@@ -112,5 +61,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+@endsection

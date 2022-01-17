@@ -37,7 +37,7 @@ Route::view('/form5', 'class.form5');
 Route::view('/lowersixth', 'class.lowersixth');
 Route::view('/uppersixth', 'class.uppersixth');
 Route::view('/test', 'test');
-Route::view('/index', 'home');
+Route::view('/', 'home');
 Route::view('/delete_success', 'errors_success.delete_student_success');
 Route::view('/delete_error', 'errors_success.delete_student_error');
 
@@ -47,7 +47,7 @@ Route::view('/admin', 'admin_dashboard');
 Route::view('/teacher','teachers_dashboard');
 Route::view('/analytics','analytics');
 Route::view('viewStudent','viewStudent');
-Route::view('/', 'auth.login');
+Route::view('login', 'auth.login');
 Route::view('/register', 'auth.register');
 Route::view('/adminRegisterTeacher', 'auth.admin_register');
 Route::view('/adminRegisterSubject', 'addsubject');
