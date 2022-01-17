@@ -242,7 +242,7 @@
           </tr>
         </table>
   </center>
-  <span style="float:left; margin-left:20%;margin-top:2%" ><i class="fa fa-print fa-2x" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
+  <span style="float:left; margin-left:20%;margin-top:2%;" ><i class="fa fa-print fa-4x btn btn-primary" aria-hidden="true" OnClick="CallPrint(this.value)" style="cursor:pointer" title="Print the Report"></i></span>
 
   </div>
 </div>
