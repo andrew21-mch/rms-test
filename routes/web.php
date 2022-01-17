@@ -111,7 +111,7 @@ Route::post('insert_sequence5', [resultController::class, 'insertFifthSequence']
 Route::post('insert_sequence6', [resultController::class, 'insertSixthSequence']);
 Route::post('/update/{id}', [teacherController::class, 'profileupdate']);
 Route::post('/report1',[subjectController::class, 'updatesubject']);
-Route::get('/contactMe',[ContactController::class, 'contact']);
+Route::view('/contactMe', 'contact');
 
 
 

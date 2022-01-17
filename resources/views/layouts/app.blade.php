@@ -27,9 +27,9 @@
                     St FrMEC
                 </a>
                 <div id="navbarSupportedContent"> 
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
-                    <a href="#">Login</a></span>
+                    <a href="login">Login</a>
+                    <a href="/register">Register</a>
+                    <a href="contactMe">Contact</a></span>
                 </div>
                    
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
