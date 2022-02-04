@@ -15,7 +15,7 @@ class reportcardController extends Controller
       ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->where('rms_students.id','=',$id)
-      ->orderBy('coefficient', 'desc')
+      // ->orderBy('coefficient', 'desc')
       ->orderBy('category', 'ASC')
       ->get();
 
@@ -29,7 +29,7 @@ class reportcardController extends Controller
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->where('rms_students.id','=',$id)
       ->orderBy('coefficient', 'desc')
-      ->orderBy('category', 'ASC')
+      // ->orderBy('category', 'ASC')
       ->get();
 
       return view('report.report2', ['data1'=>$data1]);
@@ -42,7 +42,7 @@ class reportcardController extends Controller
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->where('rms_students.id','=',$id)
       ->orderBy('coefficient', 'desc')
-      ->orderBy('category', 'ASC')
+      // ->orderBy('category', 'ASC')
       ->get();
 
       return view('report.report3', ['data1'=>$data1]);
