@@ -13,6 +13,14 @@
           </div>
         </div>
 
+        <div class="row justify-content-center mt-2">
+          <div class="form-group col-md-10 mt-2">
+            <label for="code">Subject Code</label>
+            <input type="text" class="form-control" id="code" name="code" required>
+            <span class="text-danger">@error ('code') {{ $message }} @enderror</span>
+            </div>
+          </div>
+
       <div class="row justify-content-center mt-2">
         <div class="form-group col-md-10 mt-2" >
           <label for="coef">Subject Coefficient</label>
@@ -20,6 +28,7 @@
           @error ('coef')<span class="text-danger">{{ $message }}</span> @enderror
         </div>
       </div>
+      
       <div class="row justify-content-center">
         <div class="form-group col-md-4">
           <button class="btn btn-primary" type="submit">Register Subject</button>
