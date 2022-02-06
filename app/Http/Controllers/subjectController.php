@@ -14,11 +14,13 @@ class subjectController extends Controller
     {
       $request->validate([
         'name'=>'required',
-        'coef'=>'required'
+        'coef'=>'required',
+        'code'=>'required'
 
       ]);
       $subject = new Rms_subject;
       $subject->name = $request->name;
+      $subject->subject_code = $request->code;
       $subject->Coefficient = $request->coef;
 
       if($subject->save()){

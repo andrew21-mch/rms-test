@@ -52,9 +52,11 @@ class resultController extends Controller
       ->get();
       if($test->first())
       {
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
+        Rms_result::where('student_id', $request->id)
+      ->where('subject_id', '=', Session::get('subjectid'))
+      ->update(['mark1' => $request->mark]);
       }
-      elseif(!$test->first()){
+    else{
       $result = new Rms_result;
       $result->student_id = $request->id;
       $result->class_id = $request->class_id;
@@ -63,29 +65,17 @@ class resultController extends Controller
       $result->mark1 = $request->mark;
       $result->academic_year = (now()->year);
       $result->teacher_id = Session::get('userid');
-          if($result->save())
-          {
-            return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h2>Results Saved</h2> </div>';
-          }
-          else{
-            return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Something Went Wrong Please try again </div>';
-
-          }
+        if($result->save())
+        {
+          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h2>Results Saved</h2> </div>';
         }
+        else{
+          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Something Went Wrong Please try again </div>';
+
+        }
+      }
 
 
-    }
-    function updateFirstSequence(Request $request){
-      if(
-        Rms_result::where('student_id', $request->id)
-      ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark1' => $request->mark])
-      ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
-      }
-      else{
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px"><h1>An Error Occured. Please try again</h1> </div>';
-      }
     }
 
     function insertSecondSequence(Request $request){
