@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
         view::share('data', DB::table('rms_students')->get());
         view::share('count',DB::table('rms_students')->count());
         view::share('subject1', DB::table('rms_subjects')->get());
-        view::share('subject', Rms_subject::where('subject_code', Null)->get());//get subjects
+        view::share('subject', Rms_subject::where('teacher_id', Null)->get());//get subjects
         view::share('option', DB::table('rms_options')->get());
         view::share('teacher',DB::table('rms_teachers')->get());
         view::share('countteach', Rms_teacher::count());
