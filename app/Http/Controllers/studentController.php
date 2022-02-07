@@ -12,32 +12,6 @@ class studentController extends Controller
     $data = DB::table('rms_students')->get();
     return view('/report',['data'=>$data]);
   }
-  // public function countform1(){
-  //   $count1 = Rms_student::where('class_id',1)->count();
-  //   return view('dashboards.admin_dashboard', ['count1'=>$count1]);
-  // }
-  //   public function countform2(){
-  //     $count2 = Rms_student::where('class_id',2)->count();
-  //     return view('dashboards.admin_dashboard', ['count2'=>$count2]);
-  //   }
-  //
-  //
-  // public function countform3(){
-  //   $count3 = Rms_student::where('class_id',3)->count();
-  //   return view('dashboards.admin_dashboard', ['count3'=>$count3]);
-  // }
-  // public function countform4(){
-  //   $count4 = Rms_student::where('class_id',4)->count();
-  //   return view('dashboards.admin_dashboard', ['count4'=>$count4]);
-  // }
-  // public function countform5(){
-  //   $count5 = Rms_student::where('class_id',5)->count();
-  //   return view('dashboards.admin_dashboard', ['count'=>$count]);
-  // }
-  // public function countTeachers(){
-  //   $count5 = Rms_student::count();
-  //   return view('dashboards.admin_dashboard', ['count'=>$count]);
-  // }
 
   public function viewStudents($id){
     $data = Rms_student::find($id);
