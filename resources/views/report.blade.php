@@ -41,7 +41,9 @@
           <td>
             <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
             <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+            @if(Session::get('userid') == 200)
             <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+            @endif
           </td>
 
         </tr>
@@ -67,7 +69,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
-              <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @if(Session::get('userid') == 200)
+            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+            @endif
             </td>
 
           </tr>
@@ -95,7 +99,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+              @if(Session::get('userid') == 200)
               <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @endif
             </td>
 
           </tr>
@@ -123,7 +129,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
-              <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @if(Session::get('userid') == 200)
+            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+            @endif
             </td>
 
           </tr>
@@ -151,7 +159,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+              @if(Session::get('userid') == 200)
               <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @endif
             </td>
 
           </tr>
@@ -179,7 +189,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+              @if(Session::get('userid') == 200)
               <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @endif
             </td>
 
           </tr>
@@ -206,7 +218,9 @@
             <td>
               <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
               <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
-              <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              @if(Session::get('userid') == 200)
+            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+            @endif
             </td>
 
           </tr>
