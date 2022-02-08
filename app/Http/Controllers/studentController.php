@@ -49,10 +49,16 @@ class studentController extends Controller
       'student_gender'=>'required',
       'fathers_name'=>'required',
       'mothers_name'=>'required',
-      'parents_contact'=>'required'
+      'parents_contact'=>'required',
+      'student_series'=>'required',
+      //'reg_num'=>'required'
     ]);
+    if(Rms_student::find($request->reg_num)){
+      return redirect()->back()->with('err','student with that id exist already');
+    }
+    else{
 
-    //student table
+      //student table
     $student = new Rms_student;
     $student->first_name = $request->student_first_name;
     $student->last_name = $request->student_last_name;
@@ -64,7 +70,9 @@ class studentController extends Controller
     $student->parents_contact = $request->parents_contact;
     $student->option_id = $request->student_option;
     $student->class_id = $request->student_class;
+    $student->Region = $request->student_series;
     $student->Region = $request->student_region;
+    $student->student_number = $request->reg_num;
 
     if($student->save()){
       $request->session()->flash("status","You have succesffully added $request->student_first_name");
@@ -73,7 +81,9 @@ class studentController extends Controller
     else{
       return view('registerStudent');
         }
-  }
+      }
+    }
+    
 
   function search(Request $request){
     $searched_item = Rms_student::where('first_name', 'like', '%'.$request->input('search').'%')
