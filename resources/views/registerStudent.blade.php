@@ -63,7 +63,7 @@
         </select>
         <span class="text-danger">@error ('student_class') {{$message}} @enderror</span>
       </div>
-      <div class="form-group col-md-3">
+      <div class="form-group col-md-2">
         <label for="student_class">Student Option</label>
         <select class="form-control" name="student_option" id="student_option">
           <option value="">Chose Option</option>
@@ -73,7 +73,17 @@
         </select>
         <span class="text-danger">@error ('student_option') {{$message}} @enderror</span>
       </div>
-      <div class="form-group col-md-4">
+      <div class="form-group col-md-2">
+        <label for="student_class">Student Series</label>
+        <select class="form-control" name="student_option" id="student_option">
+          <option value="">Chose Series</option>
+          <option value="">Not Applicable</option>
+          <option value="1">Arts</option>
+          <option value="2">Science</option>
+        </select>
+        <span class="text-danger">@error ('student_option') {{$message}} @enderror</span>
+      </div>
+      <div class="form-group col-md-3">
         <label for="gender">Gender</label>
         <select class="form-control" name="student_gender" id="student_gender">
           <option value="Male">Male</option>
