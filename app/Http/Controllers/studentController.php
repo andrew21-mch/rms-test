@@ -14,7 +14,11 @@ class studentController extends Controller
   }
 
   public function viewStudents($id){
-    $data = Rms_student::find($id);
+    $data = DB::table('rms_students')
+    ->join('rms_classes','rms_students.class_id','rms_classes.id')
+    ->join('rms_options', 'rms_students.option_id', 'rms_options.id')
+    ->where('rms_students.id', $id)
+    ->get();
     return view('viewstudent',['data'=>$data]);
   }
 
