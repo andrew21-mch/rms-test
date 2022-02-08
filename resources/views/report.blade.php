@@ -169,7 +169,7 @@
 
         @endforeach
 
-        <table id="customers">
+        {{-- <table id="customers">
         <hr>  <center><h2>LowerSixth</h2></center><hr>
           <tr>
             <th>Student First Name</th>
@@ -227,7 +227,7 @@
           @endif
           
 
-        @endforeach
+        @endforeach --}}
 
 
 
