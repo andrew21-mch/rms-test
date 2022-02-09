@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
 <form action="viewstudent" method=""> <br><br><br><br>
-  <h1 class="row justify-content-center">Subject Info</h1><br>
+  <h1 class="row justify-content-center">View Activity</h1><br>
 
   <table class="table">
   <thead class="thead-dark">

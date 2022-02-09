@@ -8,6 +8,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Subject Name</th>
+      <th scope="col">Teacher Code</th>
       <th scope="col">Teacher Name</th>
       <th scope="col">Teacher Contact</th>
       <th scope="col">Coefficient</th>
@@ -18,6 +19,7 @@
     <tr>
       <th scope="row">{{$subject->id}}</th>
       <td>{{$subject->name}}</td>
+      <td>{{$subject->subject_code}}</td>
       <td>{{$subject->teacher_first_name}} {{$subject->teacher_last_name}}</td>
       <td><a href="https://wa.me/237{{$subject->teacher_phone}}">{{$subject->teacher_phone}}</a></td>
       <td>{{$subject->coefficient}}</td>
@@ -30,6 +32,7 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Subject Name</th>
+        <th scope="col">Subject Code</th>
         <th scope="col">Coefficient</th>
       </tr>
     </thead>
@@ -39,6 +42,7 @@
         <tr>
           <th scope="row">{{$subject->id}}</th>
           <td>{{$subject->name}}</td>
+          <td>{{$subject->subject_code}}</td>
           <td>{{$subject->coefficient}}</td>s
         </tr>
         @endif
