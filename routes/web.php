@@ -10,6 +10,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\logsController;
 use App\Http\Controllers\teacherController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\masController;
 
 
 
@@ -28,6 +29,10 @@ use App\Http\Controllers\ContactController;
 if (App::environment('production')) {
     URL::forceScheme('https');
 }
+
+Route::view('/master_sheet', 'mastersheet');
+Route::get('/getmaster', [masController::class, 'getmas']);
+
 //views
 Route::view('/form1', 'class.form1');
 Route::view('/form2', 'class.form2');
