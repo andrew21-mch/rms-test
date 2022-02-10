@@ -19,7 +19,7 @@ class studentController extends Controller
     ->join('rms_options', 'rms_students.option_id', 'rms_options.id')
     ->where('rms_students.id', $id)
     ->get();
-    return view('viewstudent',['data'=>$data]);
+    return view('viewstudent',['student'=>$data, 'id'=>$id]);
   }
 
   public function deleteStudents($id){

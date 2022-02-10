@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Rms_student;
 use App\Models\Rms_result;
+use App\Models\Average;
 use Session;
 
 
@@ -70,33 +71,31 @@ class resultController extends Controller
               }
               $avg = $sum/$coef;
               if( Average::where('student_id', $id)
-              ->update(['student_average' => $avg])){
+              ->update(['avg1' => $avg])){
                   
               $data1 = DB::table('rms_results')
                 ->join('rms_students','rms_students.id', 'rms_results.student_id')
                 ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
                 ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
                 ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
-                //->join('averages', 'averages.id', 'rms_results.average_id')
+                ->join('averages', 'averages.id', 'rms_results.average_id')
                 ->where('rms_students.id','=',$id)
                 ->orderBy('coefficient', 'desc')
                 ->get();
                 $d = DB::table('averages')->where('student_id',$id)->first();
-                $avg_id =
-        $d->student_id;// initially it was $d->id
+                $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
-                  ->update(['average_id' => $d->student_id]);// initially it was $d->id]);
+                  ->update(['average_id' => $d->id]);// initially it was $d->id]);
                   return '<script type="text/javascript">alert("Saved")</script>';
   
               }
               else{
                 $av =  new Average;
                 $av->student_id = $id;
-                $av->student_average = $avg;
+                $av->avg1 = $avg;
                 if($av->save()){
                   $d = DB::table('averages')->where('student_id',$id)->first();
-                  $avg_id =
-          $d->student_id;// initially it was $d->id
+                  $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
                 }
@@ -105,13 +104,13 @@ class resultController extends Controller
                 ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
                 ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
                 ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
-                //->join('averages', 'averages.id', 'rms_results.average_id')
+                ->join('averages', 'averages.id', 'rms_results.average_id')
                 ->where('rms_students.id','=',$id)
                 ->orderBy('coefficient', 'desc')
                 ->get();
                 $d = DB::table('averages')->where('student_id',$id)->first();
                 print_r($d);
-                $avg_id = $d->student_id;// initially it was $d->id
+                $avg_id = $d->id;
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
               
@@ -162,7 +161,7 @@ class resultController extends Controller
                 $av->avg2 = $avg;
                 if($av->save()){
                   $d = DB::table('averages')->where('student_id',$id)->first();
-                  $avg_id =  $d->student_id;// initially it was $d->id
+                  $avg_id =  $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
                 }
@@ -176,7 +175,7 @@ class resultController extends Controller
                 ->orderBy('coefficient', 'desc')
                 ->get();
                 $d = DB::table('averages')->where('student_id',$id)->first();
-                $avg_id = $d->student_id;// initially it was $d->id
+                $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
                     return '<script type="text/javascript">alert("Saved")</script>';
@@ -215,7 +214,7 @@ class resultController extends Controller
                 ->orderBy('coefficient', 'desc')
                 ->get();
                 $d = DB::table('averages')->where('student_id',$id)->first();
-                $avg_id = $d->student_id;// initially it was $d->id
+                $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $d->id]);
                   return '<script type="text/javascript">alert("Saved")</script>';
@@ -226,7 +225,7 @@ class resultController extends Controller
                 $av->avg3 = $avg;
                 if($av->save()){
                   $d = DB::table('averages')->where('student_id',$id)->first();
-                  $avg_id = $d->student_id;// initially it was $d->id
+                  $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
                 }
@@ -240,7 +239,7 @@ class resultController extends Controller
                 ->orderBy('coefficient', 'desc')
                 ->get();
                 $d = DB::table('averages')->where('student_id',$id)->first();
-                $avg_id = $d->student_id;// initially it was $d->id
+                $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
                     return '<script type="text/javascript">alert("Saved")</script>';
