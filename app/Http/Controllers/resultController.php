@@ -248,16 +248,13 @@ class resultController extends Controller
     }
     function insertFirstSequence(Request $request){
 
-      $test = Rms_result::where('student_id', $request->id)
-      ->where('subject_id', Session::get('subjectid'))
-      ->where('sequence_id',  1)
-      ->get();
-      if($test->first())
-      {
+    if(
         Rms_result::where('student_id', $request->id)
-      ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark1' => $request->mark]);
-      }
+        ->where('subject_id', '=', Session::get('subjectid'))
+        ->update(['mark1' => $request->mark]))
+        {
+          return resultController::avg1($request->id);
+        }
     else{
       $result = new Rms_result;
       $result->student_id = $request->id;
@@ -284,20 +281,12 @@ class resultController extends Controller
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
-      ->update(['mark2' => $request->mark])
-      ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+      ->update(['mark2' => $request->mark]))
+      {
+        return resultController::avg1($request->id);
       }
+      
       else{
-        $test = Rms_result::where('student_id', $request->id)
-        ->where('subject_id', Session::get('subjectid'))
-        ->where('sequence_id',  2)
-        ->get();
-        if($test->first())
-        {
-          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
-        }
-        elseif(!$test->first()){
         $result = new Rms_result;
         $result->student_id = $request->id;
         $result->class_id = $request->class_id;
@@ -315,7 +304,6 @@ class resultController extends Controller
 
             }
           }
-      }
 
       //$result->save();
 
@@ -329,18 +317,9 @@ class resultController extends Controller
       ->where('subject_id', '=', Session::get('subjectid'))
       ->update(['mark3' => $request->mark])
       ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+        return resultController::avg2($request->id);
       }
       else{
-          $test = Rms_result::where('student_id', $request->id)
-          ->where('subject_id', Session::get('subjectid'))
-          ->where('sequence_id',  2)
-          ->get();
-          if($test->first())
-          {
-            return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
-          }
-          elseif(!$test->first()){
           $result = new Rms_result;
           $result->student_id = $request->id;
           $result->class_id = $request->class_id;
@@ -360,27 +339,15 @@ class resultController extends Controller
             }
       }
 
-
-    }
-
     function insertFourthSequence(Request $request){
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
       ->update(['mark4' => $request->mark])
       ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+        return resultController::avg2($request->id);
       }
-      else{
-        $test = Rms_result::where('student_id', $request->id)
-        ->where('subject_id', Session::get('subjectid'))
-        ->where('sequence_id',  4)
-        ->get();
-        if($test->first())
-        {
-          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
-        }
-        elseif(!$test->first()){
+      else{        
         $result = new Rms_result;
         $result->student_id = $request->id;
         $result->class_id = $request->class_id;
@@ -400,9 +367,6 @@ class resultController extends Controller
           }
       }
 
-
-    }
-
     function insertFifthSequence(Request $request){
 
       if(
@@ -410,18 +374,9 @@ class resultController extends Controller
       ->where('subject_id', '=', Session::get('subjectid'))
       ->update(['mark5' => $request->mark])
       ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+        return resultController::avg3($request->id);
       }
       else{
-        $test = Rms_result::where('student_id', $request->id)
-        ->where('subject_id', Session::get('subjectid'))
-        ->where('sequence_id',  5)
-        ->get();
-        if($test->first())
-        {
-          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
-        }
-        elseif(!$test->first()){
         $result = new Rms_result;
         $result->student_id = $request->id;
         $result->class_id = $request->class_id;
@@ -441,7 +396,6 @@ class resultController extends Controller
           }
       }
 
-    }
 
     function insertSixthSequence(Request $request){
 
@@ -450,18 +404,9 @@ class resultController extends Controller
       ->where('subject_id', '=', Session::get('subjectid'))
       ->update(['mark6' => $request->mark])
       ){
-        return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Saved </div>';
+        return resultController::avg2($request->id);
       }
       else{
-        $test = Rms_result::where('student_id', $request->id)
-        ->where('subject_id', Session::get('subjectid'))
-        ->where('sequence_id',  6)
-        ->get();
-        if($test->first())
-        {
-          return '<div style="color:green; background-color:smoke; width: 100px; padding:4px">Results Already Exist </div>';
-        }
-        elseif(!$test->first()){
         $result = new Rms_result;
         $result->student_id = $request->id;
         $result->class_id = $request->class_id;
@@ -479,10 +424,7 @@ class resultController extends Controller
 
             }
           }
-      }
-
-
-    }
+        }
 
     function viewAllResult($id){
       $res = DB::table('rms_students')
@@ -494,25 +436,3 @@ class resultController extends Controller
       ->get();
       return view('/marks.allresult',['res'=>$res]);
     }}
-
-    // function testaverages(){
-    //   $marks = Rms_result::select('student_id', 'mark1','mark2','name')
-    //   ->join('rms_subjects','rms_subjects.id', 'rms_results.subject_id')->orderBy('student_id')->get();
-    //
-    //   $ma = 0;
-    //   $mark1 = 0;
-    //   $mark2 = 0;
-    //   $coef = 0;
-    //   foreach($marks as $mark){
-    //     $ma = $ma + $mark['student_id'];
-    //
-    //     $mark1 = $mark1 + $mark['mark1'];
-    //     $mark2 = $mark2 + $mark['mark2'];
-    //
-    //     echo $mark['student_id']." ".$mark['name']."<hr>";
-    //
-    //
-    // }
-    // echo "Mark1 Total"." ________"."Mark2 Total"."<br>";
-    // echo $mark1 ."___________________". $mark2;
-    //
