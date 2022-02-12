@@ -100,6 +100,7 @@
       <table class="table table-bordered" border="1px" style="width:900px;">
         <thead>
           <tr style="background-color:#DCDCDC">
+            <th scope="col" class="col-md-2">Code</th>
             <th scope="col" class="col-md-2">Subject</th>
             <th scope="col" class="col-md-1">Coeficient</th>
             <th scope="col" class="col-md-1">EVAL1</th>
@@ -121,6 +122,7 @@
         @foreach($data1 as $data)
           <tr style="height:30px; text-align:left">
             <?php $coef = $data->coefficient+$coef ?>
+            <th scope="row">{{$data->subject_code}}</th>
             <th scope="row">{{$data->name}}</th>
             <td>{{$data->coefficient}}</td>
             <td>{{$data->mark1}}</td>
