@@ -122,4 +122,4 @@ Route::view('/contactMe', 'contact');
 
 
 #aside test route;
-Route::get('card4/{id}', [reportcardController::class, 'avg']);
+// Route::get('card4/{id}', [reportcardController::class, 'avg']);
