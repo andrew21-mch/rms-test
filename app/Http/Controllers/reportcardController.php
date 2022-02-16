@@ -73,20 +73,18 @@ class reportcardController extends Controller
 
       $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
       ->where('class_id', $student[0]->class_id)
-      ->orderBy('avg1', 'ASC')->get();
+      ->orderBy('avg1', 'DESC')->get();
 
-      $ranked = array();
+      $rankedid = array();
+      $rankedval = array();
       
       foreach($data2 as $data){
-        $ranked[$data->student_id] = $data->avg1;
+        array_push($rankedid, $data->student_id);
+        array_push($rankedval, $data->avg1);
       }
-
-      for ($i = 1; $i<= count($ranked); $i++){
-        if ($ranked[array_search($ranked[$data->student_id],$ranked)] = $id){
-          $position = $i;
-        }
-      }
+      $position = array_search($id, $rankedid) + 1;
       return $position;
+
 
 
       
