@@ -103,8 +103,8 @@
             <th scope="col" class="col-md-2">Code</th>
             <th scope="col" class="col-md-2">Subject</th>
             <th scope="col" class="col-md-1">Coeficient</th>
-            <th scope="col" class="col-md-1">EVAL1</th>
-            <th scope="col" class="col-md-1">EVAL2</th>
+            <th scope="col" class="col-md-1">EVAL3</th>
+            <th scope="col" class="col-md-1">EVAL4</th>
             <th scope="col" class="col-md-1">Final</th>
             <th scope="col" class="col-md-1">Total</th>
             <th scope="col"class="col-md-1">Teacher</th>
