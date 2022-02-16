@@ -40,6 +40,7 @@
       </style>
   </head>
 <body id="print" class="body" >
+  
   <div class="container" style="font-size:10px" >
     @if(count($data1))
     <div class="container" style="font-size:12px">
@@ -168,7 +169,7 @@
 
         <tr>
           <td colspan="2"> Class Average </td>
-          <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" ></td>
+          <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{round($class_average, 2)}}" ></td>
         </tr>
         <tr>
           <td colspan="2">Position</td>

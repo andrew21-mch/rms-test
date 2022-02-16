@@ -22,8 +22,9 @@ class reportcardController extends Controller
       ->orderBy('coefficient', 'desc')
       ->get();
       $ranks = reportcardController::avg($id);
+      $class_average = reportcardController::classAvg($id);
      // return $ranks;
-      return view('report.report1', ['data1'=>$data1, 'rank1'=> $ranks]);
+      return view('report.report1', ['data1'=>$data1, 'rank1'=> $ranks, 'class_average'=>$class_average]);
       // }
 
     }
@@ -60,15 +61,6 @@ class reportcardController extends Controller
 //ts and the average of each student
 
     public function avg($id){
-      $data1 = DB::table('rms_results')
-      ->join('rms_students','rms_students.id', 'rms_results.student_id')
-      ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
-      ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
-      ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
-      ->join('averages', 'averages.id', 'rms_results.average_id')
-      ->where('rms_students.id','=',$id)
-      ->orderBy('coefficient', 'desc')
-      ->get();
       $student = Rms_result::where('student_id', $id)->get();
 
       $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
@@ -84,11 +76,16 @@ class reportcardController extends Controller
       }
       $position = array_search($id, $rankedid) + 1;
       return $position;
+      
+    }
+
+    function classAvg($id){
+      $student = Rms_result::where('student_id', $id)->get();
+      $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
+      ->where('class_id', $student[0]->class_id)
+      ->avg('avg1');
+      return $data2;
 
 
-
-      
-      
-      
     }
 }
