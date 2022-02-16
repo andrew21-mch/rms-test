@@ -40,7 +40,7 @@ class subjectController extends Controller
       ->get();
       return view('viewsubjects', ['subject'=>$subject]);
     }
-    function updatesubject(){
+    function updatesubject($request){
       $findid = Rms_teacher::where('email','=',$request->email)->first();
       $id = $findid['id'];
      if(Rms_subject::where('teacher_id','=',$findid['id'])

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Rms_log;
 use Illuminate\Support\Facades\DB;
+use App\Models\Rms_student;
 
 class logsController extends Controller
 {
@@ -25,7 +26,7 @@ class logsController extends Controller
     $search = $request->input('search');
 
     // Search in the title and body columns from the posts table
-    $posts = Rms+student::query()
+    $posts = Rms_student::query()
         ->where('student_first_name', 'LIKE', "%{$search}%")
         ->orWhere('student_last_name', 'LIKE', "%{$search}%")
         ->get();

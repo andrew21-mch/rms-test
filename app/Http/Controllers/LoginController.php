@@ -7,7 +7,8 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Rms_teacher;
 use App\Models\Rms_log;
-use Session;
+use Illuminate\Support\Facades\Session;
+
 use Carbon;
 
 

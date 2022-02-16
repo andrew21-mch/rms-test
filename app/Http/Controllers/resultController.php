@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Rms_student;
 use App\Models\Rms_result;
 use App\Models\Average;
-use Session;
+use Illuminate\Support\Facades\Session;
 
 
 class resultController extends Controller
