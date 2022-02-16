@@ -40,9 +40,6 @@
       </style>
   </head>
 <body id="print" class="body" >
-  @foreach ($rank1 as $rank)
-  <?php $ran = $rank;?>
-  @endforeach
   <div class="container" style="font-size:10px" >
     @if(count($data1))
     <div class="container" style="font-size:12px">
@@ -176,7 +173,7 @@
         <tr>
           <td colspan="2">Position</td>
 
-          <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{$ran}}"></td>
+          <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{$rank1}}"></td>
         </tr>
         <tr>
           <td colspan="2">Observation</td>

@@ -60,24 +60,35 @@ class reportcardController extends Controller
 //ts and the average of each student
 
     public function avg($id){
+      $data1 = DB::table('rms_results')
+      ->join('rms_students','rms_students.id', 'rms_results.student_id')
+      ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
+      ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
+      ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
+      ->join('averages', 'averages.id', 'rms_results.average_id')
+      ->where('rms_students.id','=',$id)
+      ->orderBy('coefficient', 'desc')
+      ->get();
       $student = Rms_result::where('student_id', $id)->get();
-      $data1 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
+
+      $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
       ->where('class_id', $student[0]->class_id)
       ->orderBy('avg1', 'ASC')->get();
 
       $ranked = array();
       
-      foreach($data1 as $data){
+      foreach($data2 as $data){
         $ranked[$data->student_id] = $data->avg1;
       }
-      
-      for ($i = 1; $i <= count($ranked); $i++){
-        if($ranked[$i] = $id){
-          $rank = array($i);
-          return $rank;
-        }
 
+      for ($i = 1; $i<= count($ranked); $i++){
+        if ($ranked[array_search($ranked[$data->student_id],$ranked)] = $id){
+          $position = $i;
+        }
       }
+      return $position;
+
+
       
       
       
