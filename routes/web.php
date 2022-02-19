@@ -126,10 +126,8 @@ Route::view('/contactMe', 'contact');
 
 #aside test route;
 // Route::get('card4/{id}', [reportcardController::class, 'avg']);
-Route::post('/contact', function(Request $request){
+Route::post('/contactMe', function(Request $request){
     Mail::send(new ContactMail($request));
       return redirect('/contact')->with('status', 'Message Sent!');
     });
 
-
-Route::get('/contact', 'PageController@contact')->name('pages.contact');
