@@ -19,7 +19,7 @@ class reportcardController extends Controller
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
-      ->orderBy('coefficient', 'desc')
+      ->orderBy('subject_code', 'ASC')
       ->get();
       $ranks = reportcardController::avg1($id);
       $class_average = reportcardController::classAvg1($id);
@@ -36,7 +36,7 @@ class reportcardController extends Controller
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
-      ->orderBy('coefficient', 'desc')
+      ->orderBy('subject_code', 'ASC')
       ->get();
 
       $ranks = reportcardController::avg2($id);
@@ -53,7 +53,7 @@ class reportcardController extends Controller
       ->join('rms_teachers', 'rms_teachers.id', 'rms_results.teacher_id')
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
-      ->orderBy('coefficient', 'desc')
+      ->orderBy('subject_code', 'ASC')
       ->get();
       $ranks = reportcardController::avg3($id);
       $class_average = reportcardController::classAvg3($id);
