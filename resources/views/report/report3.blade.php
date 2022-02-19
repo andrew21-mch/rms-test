@@ -147,7 +147,7 @@
             <?php $countp+=1 ?>
             @endif
 
-            <?php $tmarks = $tmarks + (($data->mark5 + $data->mark6)/2)*$data->coefficient;
+            <?php //$tmarks = $tmarks + (($data->mark5 + $data->mark6)/2)*$data->coefficient;
 ?>
           </tr>
         @endforeach

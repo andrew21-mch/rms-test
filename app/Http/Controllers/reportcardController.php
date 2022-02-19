@@ -42,7 +42,7 @@ class reportcardController extends Controller
       $ranks = reportcardController::avg2($id);
       $class_average = reportcardController::classAvg2($id);
      // return $ranks;
-      return view('report.report2', ['data1'=>$data1, 'rank1'=> $ranks, 'class_average'=>$class_average]);
+      return view('report.report2', ['data1'=>$data1, 'rank2'=> $ranks, 'class_average'=>$class_average]);
       // }
     }
     public function getStudentReport3($id){
@@ -58,7 +58,7 @@ class reportcardController extends Controller
       $ranks = reportcardController::avg3($id);
       $class_average = reportcardController::classAvg3($id);
      // return $ranks;
-      return view('report.report3', ['data1'=>$data1, 'rank1'=> $ranks, 'class_average'=>$class_average]);
+      return view('report.report3', ['data1'=>$data1, 'rank3'=> $ranks, 'class_average'=>$class_average]);
       // }
     }
 
@@ -93,7 +93,7 @@ class reportcardController extends Controller
       
       foreach($data2 as $data){
         array_push($rankedid, $data->student_id);
-        array_push($rankedval, $data->avg1);
+        array_push($rankedval, $data->avg2);
       }
       $position = array_search($id, $rankedid) + 1;
       return $position;
@@ -111,7 +111,7 @@ class reportcardController extends Controller
       
       foreach($data2 as $data){
         array_push($rankedid, $data->student_id);
-        array_push($rankedval, $data->avg1);
+        array_push($rankedval, $data->avg3);
       }
       $position = array_search($id, $rankedid) + 1;
       return $position;
