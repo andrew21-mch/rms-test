@@ -1,6 +1,6 @@
-<h1>You have a new message from TallTales:</h1>
+<h1>You have a new message from {{$email->name}}:</h1>
 
-<h2>Name: </h2>
+<h4>Name: </h4>
 <p>
 {{ $email->name }}
 </p>
