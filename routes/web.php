@@ -129,6 +129,6 @@ Route::view('/contactMe', 'contact');
 Route::view('contactmail', 'contactmail');
 Route::post('/contactUs', function(Request $request){
     Mail::send(new ContactMail($request));
-      return redirect('/contact_us')->with('status', 'Message Sent!');
+      return redirect('/contact')->with('status', 'Message Sent!');
     });
 
