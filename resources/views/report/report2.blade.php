@@ -120,6 +120,7 @@
             <?php $passed = 0;
             $countp = 0?>
         @foreach($data1 as $data)
+        <?php $avg = $data->avg2?>
           <tr style="height:30px; text-align:left">
             <?php $coef = $data->coefficient+$coef ?>
             <th scope="row">{{$data->subject_code}}</th>
@@ -160,7 +161,7 @@
           <tr>
             <td colspan="2"> Student Average </td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{round($tmarks/$coef, 2)}}"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px; font-size=10px" value="{{round($avg, 2)}}"></td>
           </tr>
           <tr>
             <td colspan="2"> Subjects Passed </td>
@@ -173,12 +174,12 @@
 
           <tr>
             <td colspan="2"> Class Average </td>
-            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" ></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{round($class_average, 2)}}"></td>
           </tr>
           <tr>
             <td colspan="2">Position</td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{$rank1}}"></td>
           </tr>
           <tr>
             <td colspan="2">Observation</td>

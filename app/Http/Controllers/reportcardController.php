@@ -40,7 +40,7 @@ class reportcardController extends Controller
       ->get();
 
       $ranks = reportcardController::avg2($id);
-      $class_average = reportcardController::classAvg1($id);
+      $class_average = reportcardController::classAvg2($id);
      // return $ranks;
       return view('report.report2', ['data1'=>$data1, 'rank1'=> $ranks, 'class_average'=>$class_average]);
       // }
@@ -132,7 +132,7 @@ class reportcardController extends Controller
       $student = Rms_result::where('student_id', $id)->get();
       $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
       ->where('class_id', $student[0]->class_id)
-      ->avg('avg1');
+      ->avg('avg2');
       return $data2;
 
 
@@ -142,7 +142,7 @@ class reportcardController extends Controller
       $student = Rms_result::where('student_id', $id)->get();
       $data2 = DB::table('averages')->join('rms_students', 'rms_students.id', 'averages.student_id')
       ->where('class_id', $student[0]->class_id)
-      ->avg('avg1');
+      ->avg('avg3');
       return $data2;
 
 
