@@ -14,6 +14,7 @@ use App\Http\Controllers\masController;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 
 
@@ -128,7 +129,9 @@ Route::view('/contactMe', 'contact');
 // Route::get('card4/{id}', [reportcardController::class, 'avg']);
 Route::view('contactmail', 'contactmail');
 Route::post('/contactUs', function(Request $request){
-    Mail::send(new ContactMail($request));
-      return redirect('/contact_us')->with('status', 'Message Sent!');
+    if(Mail::send(new ContactMail($request))){
+      Session::flash('success_email','Message Successfully sent!.');
+      return redirect('/contact_us');
+    }
     });
 

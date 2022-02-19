@@ -38,6 +38,13 @@
       <center><button class="btn btn-primary btn-lg justify-content-center " id="submitButton" type="submit" style="width:120px">Submit</button></center>
     </div>
 
+    @if(Session::has('success_email'))
+    <div class="alert alert-success" role="alert">
+          <p>{{Session::get('success_email')}}</p>
+      </div>
+      @endif
+
+
   </form>
 
 </div>
