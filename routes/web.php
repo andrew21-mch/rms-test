@@ -11,9 +11,6 @@ use App\Http\Controllers\logsController;
 use App\Http\Controllers\teacherController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\masController;
-use Illuminate\Http\Request;
-use App\Mail\ContactMail;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
 
@@ -129,8 +126,5 @@ Route::view('/contactMe', 'contact');
 #aside test route;
 // Route::get('card4/{id}', [reportcardController::class, 'avg']);
 Route::view('contactmail', 'contactmail');
-Route::post('/contactUs', function(Request $request){
-    Mail::send(new ContactMail($request));
-      return redirect('/contact_us')->with('status', 'Message Sent!');
-    });
+Route::post('/contactUs', [contactController::class, 'contact']);
 
