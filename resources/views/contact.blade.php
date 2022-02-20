@@ -42,7 +42,7 @@
     <div class="alert alert-success" role="alert">
           <p>{{ Session::get('mail_status')}}</p>
       </div>
-      <?php Session::forget("mail_status")
+      {{Session::forget("mail_status")}}
       @endif
 
 
