@@ -1,3 +1,4 @@
+<?php ?>
 @extends('layouts.layout')
 @section('content')
 <br><br><br><br>

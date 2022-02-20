@@ -1,16 +1,7 @@
-<h1>You have a new message from {{$email->name}}:</h1>
-
-<h4>Name: </h4>
-<p>
-{{ $email->name }}
+<div style="background-color: rgb(7, 21, 46); color:white; height:50%; ">
+    <h3>You have a new message from {{$email->name}}:</h3>
+    <b>Message:</b>
+    <p>
+    {{ $email->message }}
 </p>
-
-<h2>Email: </h2>
-<p>
-{{ $email->email }}
-</p>
-
-<h2>Message:</h2>
-<p>
-{{ $email->message }}
-</p>
+</div>

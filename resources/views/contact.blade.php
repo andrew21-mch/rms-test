@@ -38,10 +38,11 @@
       <center><button class="btn btn-primary btn-lg justify-content-center " id="submitButton" type="submit" style="width:120px">Submit</button></center>
     </div>
 
-    @if(Session::has('success_email'))
+    @if(Session::has('mail_status'))
     <div class="alert alert-success" role="alert">
-          <p>{{Session::get('success_email')}}</p>
+          <p>{{ Session::get('mail_status')}}</p>
       </div>
+      <?php Session::forget("mail_status")
       @endif
 
 

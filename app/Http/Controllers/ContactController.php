@@ -11,7 +11,9 @@ class ContactController extends Controller
     //send mail
     function contact(Request $request){
         Mail::send(new ContactMail($request));
-          return redirect('/contact_us')->with('status', 'Message Sent!');
+        $request->session()->put('mail_status', 'Message Sent!');
+          return redirect('/contact_us');
         ;
+        
     }
 }
