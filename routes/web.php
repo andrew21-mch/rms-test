@@ -14,6 +14,8 @@ use App\Http\Controllers\masController;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
 
 
 
