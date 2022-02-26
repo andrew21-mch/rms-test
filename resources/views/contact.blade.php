@@ -42,9 +42,12 @@
     <div class="alert alert-success" role="alert">
           <p>{{ Session::get('mail_status')}}</p>
       </div>
-      <?php Session::forget("mail_status")
+      <?php
+       Session::forget("mail_status");
+      ?>
+      </div>
       @endif
-
+      
 
   </form>
 

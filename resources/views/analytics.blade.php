@@ -29,6 +29,89 @@
 </style>
   @if(Session::get('user1') == 200)
 
+  <div class="container">
+    <h2>Form One</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td>Max Average</td>
+          <td>Min Average</td>
+          <td>Class Average</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Form One</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td>Max Average</td>
+          <td>Min Average</td>
+          <td>Class Average</td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+      </table>
+    </div>
+
+    <h2>Form One</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td>Max Average</td>
+          <td>Min Average</td>
+          <td>Class Average</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+      </table>
+    </div>
+
+    <h2>Form One</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td>Max Average</td>
+          <td>Min Average</td>
+          <td>Class Average</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+
+      </table>
+    </div>
+
+    <h2>Form One</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <td>Max Average</td>
+          <td>Min Average</td>
+          <td>Class Average</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+
+        </tr>
+      </table>
+    </div>
+
+  </div>
 
   <div class="container">
       <div id="aligned">
