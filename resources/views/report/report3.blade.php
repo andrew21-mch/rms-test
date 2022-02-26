@@ -179,7 +179,7 @@
           <tr>
             <td colspan="2">Position</td>
 
-            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{$rank1}}"></td>
+            <td><input type="text" class="form-control" style="height:22px; width:80px; margin:1px 2px 1px 4px;" value="{{$rank3}}"></td>
           </tr>
           <tr>
             <td colspan="2">Observation</td>
