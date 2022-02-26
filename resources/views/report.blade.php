@@ -28,7 +28,7 @@
           <th>Student Last Name</th>
           <th>Gender</th>
           <th>DOB</th>
-          <th>Action</th>
+          <th colspan='3'>Action</th>
         </tr>
 
         @foreach ($data as $user)
@@ -38,13 +38,11 @@
           <td>{{$user->last_name}}</td>
           <td>{{$user->gender}}</td>
           <td>{{$user->date_of_birth}}</td>
-          <td>
-            <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
-            <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+            <td><a href="view/{{$user->id}}"><button class="btn btn-primary"><span class="iconify" data-icon="emojione-v1:eye"></button></span></a></td>
+            <td><a href="edit/{{$user->id}}"><button class="btn btn-secondary"><span class="iconify" data-icon="carbon:add-filled"></button></span></a></td>
             @if(Session::get('user1') == 200)
-            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+            <td><a href="delete/{{$user->id}}"><button class="btn btn-danger"><span class="iconify" data-icon="bi:trash-fill"></button></span></a></td>
             @endif
-          </td>
 
         </tr>
         @endif
@@ -56,7 +54,7 @@
             <th>Student Last Name</th>
             <th>Gender</th>
             <th>DOB</th>
-            <th>Action</th>
+            <th colspan='3'>Action</th>
           </tr>
 
           @foreach ($data as $user)
@@ -66,13 +64,11 @@
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
             <td>{{$user->date_of_birth}}</td>
-            <td>
-              <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
-              <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
-              @if(Session::get('user1') == 200)
-            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              <td><a href="view/{{$user->id}}"><button class="btn btn-primary"><span class="iconify" data-icon="emojione-v1:eye"></button></span></a></td>
+            <td><a href="edit/{{$user->id}}"><button class="btn btn-secondary"><span class="iconify" data-icon="carbon:add-filled"></button></span></a></td>
+            @if(Session::get('user1') == 200)
+            <td><a href="delete/{{$user->id}}"><button class="btn btn-danger"><span class="iconify" data-icon="bi:trash-fill"></button></span></a></td>
             @endif
-            </td>
 
           </tr>
           @endif
@@ -86,7 +82,7 @@
             <th>Student Last Name</th>
             <th>Gender</th>
             <th>DOB</th>
-            <th>Action</th>
+            <th colspan='3'>Action</th>
           </tr>
 
           @foreach ($data as $user)
@@ -96,13 +92,11 @@
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
             <td>{{$user->date_of_birth}}</td>
-            <td>
-              <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
-              <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
-              @if(Session::get('user1') == 200)
-              <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
-              @endif
-            </td>
+            <td><a href="view/{{$user->id}}"><button class="btn btn-primary"><span class="iconify" data-icon="emojione-v1:eye"></button></span></a></td>
+            <td><a href="edit/{{$user->id}}"><button class="btn btn-secondary"><span class="iconify" data-icon="carbon:add-filled"></button></span></a></td>
+            @if(Session::get('user1') == 200)
+            <td><a href="delete/{{$user->id}}"><button class="btn btn-danger"><span class="iconify" data-icon="bi:trash-fill"></button></span></a></td>
+            @endif
 
           </tr>
           @endif
@@ -116,7 +110,7 @@
             <th>Student Last Name</th>
             <th>Gender</th>
             <th>DOB</th>
-            <th>Action</th>
+            <th colspan='3'>Action</th>
           </tr>
 
           @foreach ($data as $user)
@@ -126,13 +120,11 @@
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
             <td>{{$user->date_of_birth}}</td>
-            <td>
-              <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
-              <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+              <td><a href="view/{{$user->id}}"><button class="btn btn-primary"><span class="iconify" data-icon="emojione-v1:eye"></button></span></a></td>
+              <td><a href="edit/{{$user->id}}"><button class="btn btn-secondary"><span class="iconify" data-icon="carbon:add-filled"></button></span></a></td>
               @if(Session::get('user1') == 200)
-            <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
-            @endif
-            </td>
+              <td><a href="delete/{{$user->id}}"><button class="btn btn-danger"><span class="iconify" data-icon="bi:trash-fill"></button></span></a></td>
+              @endif
 
           </tr>
           @endif
@@ -146,7 +138,7 @@
             <th>Student Last Name</th>
             <th>Gender</th>
             <th>DOB</th>
-            <th>Action</th>
+            <th colspan='3'>Action</th>
           </tr>
 
           @foreach ($data as $user)
@@ -156,13 +148,11 @@
             <td>{{$user->last_name}}</td>
             <td>{{$user->gender}}</td>
             <td>{{$user->date_of_birth}}</td>
-            <td>
-              <a href="view/{{$user->id}}"><span class="iconify" data-icon="emojione-v1:eye"></span></a>
-              <a href="edit/{{$user->id}}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+              <td><a href="view/{{$user->id}}"><button class="btn btn-primary"><span class="iconify" data-icon="emojione-v1:eye"></button></span></a></td>
+              <td><a href="edit/{{$user->id}}"><button class="btn btn-secondary"><span class="iconify" data-icon="carbon:add-filled"></button></span></a></td>
               @if(Session::get('user1') == 200)
-              <a href="delete/{{$user->id}}"><span class="iconify" data-icon="bi:trash-fill"></span></a>
+              <td><a href="delete/{{$user->id}}"><button class="btn btn-danger"><span class="iconify" data-icon="bi:trash-fill"></button></span></a></td>
               @endif
-            </td>
 
           </tr>
           @endif
