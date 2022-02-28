@@ -112,8 +112,8 @@
       </div>
       <div class="search-box">
         <form class="" action="/search" method="get">
-          <input type="text" name="search" placeholder="Search">
-          <button type="submit"><i class='bx bx-search' ></i></button>
+          <input type="text" name="search" placeholder="Search" style="height:40px">
+          <button type="submit" class='bx bx-search' style="border-style:none"></button>
         </form>
 
       </div>
@@ -199,8 +199,8 @@
         </div>
         <div class="search-box">
           <form class="" action="/search" method="get">
-            <input type="text" name="search" placeholder="Search">
-            <button type="submit"><i class='bx bx-search' ></i></button>
+            <input type="text" name="search" placeholder="Search" style="height:45px">
+            <button type="submit" class='bx bx-search' Style="border-style:none"></button>
           </form>
 
         </div>
@@ -295,8 +295,8 @@
           </div>
           <div class="search-box">
             <form class="" action="/search" method="get">
-              <input type="text" name="search" placeholder="Search">
-              <button type="submit"><i class='bx bx-search' ></i></button>
+              <input type="text" name="search" placeholder="Search" style="height:40px">
+              <button type="submit" class='bx bx-search' style="border-style:none" ></button>
             </form>
 
           </div>
