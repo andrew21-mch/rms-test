@@ -55,6 +55,7 @@ class studentController extends Controller
       'mothers_name'=>'required',
       'parents_contact'=>'required',
       'student_series'=>'required',
+      // 'student_option'=>'required'
       //'reg_num'=>'required'
     ]);
     if(Rms_student::find($request->reg_num)){
@@ -74,12 +75,12 @@ class studentController extends Controller
     $student->parents_contact = $request->parents_contact;
     $student->option_id = $request->student_option;
     $student->class_id = $request->student_class;
-    $student->Region = $request->student_series;
+    $student->Series = $request->student_series;
     $student->Region = $request->student_region;
     $student->student_number = $request->reg_num;
 
     if($student->save()){
-      $request->session()->flash("status","You have succesffully added $request->student_first_name");
+      $request->session()->put('student_added', 'Student Succesfully Added!');
       return redirect('student');
     }
     else{

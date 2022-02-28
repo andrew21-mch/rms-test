@@ -19,7 +19,13 @@
   <div class="container">
     <div class="class">
       <br><br><br><br>
-    <center><h1>Detailed Classes</h1></center>
+    <center><h1>Detailed Classes</h1></center> <br>
+    @if(Session::has('student_added'))
+    <div class="alert alert-success" role="alert">
+          <p>{{ Session::get('student_added')}}</p>
+      </div>
+      {{Session::forget("student_added")}}
+      @endif
       </div>
       <table id="customers">
         <hr><center><h2>Form 1</h2></center><hr>

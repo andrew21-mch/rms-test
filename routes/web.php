@@ -47,6 +47,7 @@ Route::view('/test', 'test');
 Route::view('/', 'home');
 Route::view('/delete_success', 'errors_success.delete_student_success');
 Route::view('/delete_error', 'errors_success.delete_student_error');
+Route::view('/no_results_available', 'no_results_available');
 
 
 

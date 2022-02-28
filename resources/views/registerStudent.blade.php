@@ -78,9 +78,9 @@
         <label for="student_class">Student Option</label>
         <select class="form-control" name="student_option" id="student_option">
           <option value="">Chose Option</option>
-          <option value="1">General</option>
-          <option value="2">Commercial</option>
-          <option value="3">Technical</option>
+          <option value="10">General</option>
+          <option value="11">Commercial</option>
+          <option value="12">Technical</option>
         </select>
         <span class="text-danger">@error ('student_option') {{$message}} @enderror</span>
       </div>
@@ -89,8 +89,8 @@
         <select class="form-control" name="student_series" id="student_series">
           <option value="">Chose Series</option>
           <option value="">Not Applicable</option>
-          <option value="1">Arts</option>
-          <option value="2">Science</option>
+          <option value="Arts">Arts</option>
+          <option value="Science">Science</option>
         </select>
         <span class="text-danger">@error ('student_series') {{$message}} @enderror</span>
       </div>

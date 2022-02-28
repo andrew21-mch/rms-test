@@ -12,7 +12,7 @@ class reportcardController extends Controller
 
   //Get the results and the average of each student
     public function getStudentReport1($id){
-      $data1 = DB::table('rms_results')
+      if(count($data1 = DB::table('rms_results')
       ->join('rms_students','rms_students.id', 'rms_results.student_id')
       ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
       ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
@@ -20,16 +20,20 @@ class reportcardController extends Controller
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
       ->orderBy('subject_code', 'ASC')
-      ->get();
-      $ranks = reportcardController::avg1($id);
-      $class_average = reportcardController::classAvg1($id);
+      ->get())){
+        $ranks = reportcardController::avg1($id);
+        $class_average = reportcardController::classAvg1($id);
      // return $ranks;
       return view('report.report1', ['data1'=>$data1, 'rank1'=> $ranks, 'class_average'=>$class_average]);
+      }else{
+        return view('/no_results_available');
+      }
+      
       // }
 
     }
     public function getStudentReport2($id){
-      $data1 = DB::table('rms_results')
+      if(count($data1 = DB::table('rms_results')
       ->join('rms_students','rms_students.id', 'rms_results.student_id')
       ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
       ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
@@ -37,16 +41,21 @@ class reportcardController extends Controller
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
       ->orderBy('subject_code', 'ASC')
-      ->get();
+      ->get())){
+     
+           // return $ranks;
+        $ranks = reportcardController::avg2($id);
+            //class average
+        $class_average = reportcardController::classAvg2($id);
+        return view('report.report2', ['data1'=>$data1, 'rank2'=> $ranks, 'class_average'=>$class_average]);
+      }else{
+        return view('/no_results_available');
 
-      $ranks = reportcardController::avg2($id);
-      $class_average = reportcardController::classAvg2($id);
-     // return $ranks;
-      return view('report.report2', ['data1'=>$data1, 'rank2'=> $ranks, 'class_average'=>$class_average]);
+      }
       // }
     }
     public function getStudentReport3($id){
-      $data1 = DB::table('rms_results')
+      if(count($data1 = DB::table('rms_results')
       ->join('rms_students','rms_students.id', 'rms_results.student_id')
       ->join('rms_classes', 'rms_classes.id', 'rms_results.class_id')
       ->join('rms_subjects', 'rms_subjects.id', 'rms_results.subject_id')
@@ -54,12 +63,17 @@ class reportcardController extends Controller
       ->join('averages', 'averages.id', 'rms_results.average_id')
       ->where('rms_students.id','=',$id)
       ->orderBy('subject_code', 'ASC')
-      ->get();
-      $ranks = reportcardController::avg3($id);
-      $class_average = reportcardController::classAvg3($id);
-     // return $ranks;
-      return view('report.report3', ['data1'=>$data1, 'rank3'=> $ranks, 'class_average'=>$class_average]);
-      // }
+      ->get())){
+        $ranks = reportcardController::avg3($id);
+        $class_average = reportcardController::classAvg3($id);
+       // return $ranks;
+        return view('report.report3', ['data1'=>$data1, 'rank3'=> $ranks, 'class_average'=>$class_average]);
+      }
+      else{
+        return view('/no_results_available');
+
+      }
+     // }
     }
 
 //ts and the average of each student
