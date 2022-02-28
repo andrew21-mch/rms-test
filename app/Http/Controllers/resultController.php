@@ -86,7 +86,8 @@ class resultController extends Controller
                 $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $d->id]);// initially it was $d->id]);
-                  return '<script type="text/javascript">alert("Saved")</script>';
+                  Session::put('mark_success', 'Mark Saved');
+                  return redirect()->back();
   
               }
               else{
@@ -113,8 +114,9 @@ class resultController extends Controller
                 $avg_id = $d->id;
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
-              
-                  return '<script type="text/javascript">alert("Saved")</script>';
+            
+                  Session::put('mark_success', 'Mark Saved');
+                  return redirect()->back();
               }
     }
   
@@ -153,7 +155,8 @@ class resultController extends Controller
                 $avg_id = $d->id;
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $d->id]);
-                  return '<script type="text/javascript">alert("Saved")</script>';
+                  Session::put('mark_success', 'Mark Saved');
+                  return redirect()->back();
               }
               else{
                 $av =  new Average;
@@ -178,7 +181,8 @@ class resultController extends Controller
                 $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
-                    return '<script type="text/javascript">alert("Saved")</script>';
+                  Session::put('mark_success', 'Mark Saved');
+                  return redirect()->back();
               }
     }
   
@@ -217,7 +221,8 @@ class resultController extends Controller
                 $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $d->id]);
-                  return '<script type="text/javascript">alert("Saved")</script>';
+                  Session::put('mark_success', 'Mark Saved');
+                  return redirect()->back();
               }
               else{
                 $av =  new Average;
@@ -242,27 +247,32 @@ class resultController extends Controller
                 $avg_id = $d->id;// initially it was $d->id
                   Rms_result::where('student_id', $id)
                   ->update(['average_id' => $avg_id]);
-                    return '<script type="text/javascript">alert("Saved")</script>';
+                    Session::put('mark_success', 'Mark Saved');
+                    return redirect()->back();
               }
     }
     function insertFirstSequence(Request $request){
-
-    if(
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
+      if(
         Rms_result::where('student_id', $request->id)
         ->where('subject_id', '=', Session::get('subjectid'))
         ->update(['mark1' => $request->mark]))
         {
           return resultController::avg1($request->id);
         }
-    else{
+      else{
       $result = new Rms_result;
       $result->student_id = $request->id;
       $result->class_id = $request->class_id;
       $result->sequence_id = 1;
       $result->subject_id = Session::get('subjectid');
-      $result->mark1 = $request->mark;
       $result->academic_year = (now()->year);
       $result->teacher_id = Session::get('userid');
+      $result->mark1 = $request->mark;
+      
         if($result->save())
         {
           return resultController::avg1($request->id);
@@ -277,6 +287,10 @@ class resultController extends Controller
     }
 
     function insertSecondSequence(Request $request){
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
@@ -310,7 +324,10 @@ class resultController extends Controller
     }
 
     function insertThirdSequence(Request $request){
-
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
@@ -339,6 +356,10 @@ class resultController extends Controller
       }
 
     function insertFourthSequence(Request $request){
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
@@ -367,7 +388,10 @@ class resultController extends Controller
       }
 
     function insertFifthSequence(Request $request){
-
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
       if(
         Rms_result::where('student_id', $request->id)
       ->where('subject_id', '=', Session::get('subjectid'))
@@ -397,6 +421,10 @@ class resultController extends Controller
 
 
     function insertSixthSequence(Request $request){
+      if($request->mark > 20 ){
+        $request->session()->put('mark_error', "Mark Can not be greater than 20");
+        return redirect()->back();
+      }
 
       if(
         Rms_result::where('student_id', $request->id)

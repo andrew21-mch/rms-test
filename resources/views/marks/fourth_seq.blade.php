@@ -4,6 +4,21 @@
 
   <div class="class">
     <br><br><br><br>
+    @if(Session::has('mark_error'))
+        <?php 
+        echo '<script>
+          alert("Mark Can not be greater than 20");
+        </script>';
+        ?>
+        {{Session::forget("mark_error")}}
+      </div>
+    @endif
+    @if(Session::has('mark_success'))
+      <div class="alert alert-primary">
+        <span>Marks Inserted</span>
+      </div>
+      {{Session::forget('mark_success')}}
+    @endif
     <table id="customers">
       <tr>
         <th style="background:black; color: white">Form 1</th>
