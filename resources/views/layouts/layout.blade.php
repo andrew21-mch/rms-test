@@ -322,6 +322,10 @@
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2021 Copyright SKYE8-LTD
+              @if(Session::has('logged_in'))
+              <span style=" color:white; float:left">{{ Session::get('logged_in')}}</span>
+              {{Session::forget("logged_in")}}
+              @endif
             </div>
             <!-- Copyright -->
 

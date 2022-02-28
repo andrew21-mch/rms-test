@@ -45,6 +45,7 @@ class LoginController extends Controller
             $log->login_time = now();
             $log->save();
             $request->session()->put('user1',$data['role']);
+            $request->session()->put('logged_in',"You are Logged in");
             $request->session()->put('subjectid',$data['subject_id']);
 
             return view('admin_dashboard',['data'=>$data]);
