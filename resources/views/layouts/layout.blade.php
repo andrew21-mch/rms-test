@@ -113,7 +113,7 @@
       <div class="search-box">
         <form class="" action="/search" method="get">
           <input type="text" name="search" placeholder="Search" style="height:40px">
-          <button type="submit" class='bx bx-search' style="border-style:none"></button>
+          <button type="submit" class='bx bx-search' style="border-style:none;"></button>
         </form>
 
       </div>
@@ -296,7 +296,7 @@
           <div class="search-box">
             <form class="" action="/search" method="get">
               <input type="text" name="search" placeholder="Search" style="height:40px">
-              <button type="submit" class='bx bx-search' style="border-style:none" ></button>
+              <button type="submit" class='bx bx-search' style="border-style:none;" ></button>
             </form>
 
           </div>
