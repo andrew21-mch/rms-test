@@ -161,3 +161,44 @@ a#box:hover{
     -webkit-print-color-adjust: exact;
   }
 }
+
+.btn-primary{
+  color: #fff;
+  /* background: #FCD900; */
+  background-color: #035397;
+  border-color: #0d6efd;
+  margin: 2%;
+  width: 40%;
+}
+
+.card {
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #E8630A;
+  /* background-color: #fff; */
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+/* media query to set desktop screen for card with margin-top 50px
+@media screen and (max-width: 992px) {
+  .card {
+    margin-top: 50px;
+  }
+} */
+
+.page-footer {
+  text-align: center;
+  background-color: #035397;
+  /* background-color: blue; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  opacity: 95%;
+  color: white;
+}
